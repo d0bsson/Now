@@ -24,7 +24,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9ba-ed-zrf" secondAttribute="bottom" constant="176" id="9Fe-AX-OUd"/>
-                            <constraint firstItem="9ba-ed-zrf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ggf-Pi-NJe"/>
+                            <constraint firstItem="9ba-ed-zrf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="WmL-os-ojE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9ba-ed-zrf" secondAttribute="trailing" constant="40" id="hO4-0u-QTY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9ba-ed-zrf" secondAttribute="trailing" constant="40" id="i3k-sm-3SQ"/>
                             <constraint firstItem="9ba-ed-zrf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="naw-gt-Mtt"/>
                         </constraints>
