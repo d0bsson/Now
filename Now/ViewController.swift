@@ -18,7 +18,7 @@ class ViewController: UIViewController {
             #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1).cgColor
         ]
         view.layer.addSublayer(gradientLayer)
-        
+        //sdfsdfsdf
     }
 
 
