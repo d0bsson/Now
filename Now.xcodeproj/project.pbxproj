@@ -15,11 +15,9 @@
 		D744A67027B4512300A934D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D744A66E27B4512300A934D6 /* LaunchScreen.storyboard */; };
 		D744A67E27B6E40900A934D6 /* BarCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A67D27B6E40900A934D6 /* BarCategoriesViewController.swift */; };
 		D744A68027B6E58100A934D6 /* CultureCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A67F27B6E58100A934D6 /* CultureCategoriesViewController.swift */; };
-		D744A68227B6E5DE00A934D6 /* BarEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A68127B6E5DE00A934D6 /* BarEventTableViewController.swift */; };
-		D744A68427B6E60700A934D6 /* CultureEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A68327B6E60700A934D6 /* CultureEventTableViewController.swift */; };
 		D744A68927B9451600A934D6 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A68827B9451600A934D6 /* Extentions.swift */; };
 		D744A68B27B9457100A934D6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A68A27B9457100A934D6 /* NetworkManager.swift */; };
-		D744A68E27B945FE00A934D6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A68D27B945FE00A934D6 /* Event.swift */; };
+		D744A69027B97E4300A934D6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A68F27B97E4300A934D6 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +31,9 @@
 		D744A67127B4512300A934D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D744A67D27B6E40900A934D6 /* BarCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCategoriesViewController.swift; sourceTree = "<group>"; };
 		D744A67F27B6E58100A934D6 /* CultureCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureCategoriesViewController.swift; sourceTree = "<group>"; };
-		D744A68127B6E5DE00A934D6 /* BarEventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarEventTableViewController.swift; sourceTree = "<group>"; };
-		D744A68327B6E60700A934D6 /* CultureEventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureEventTableViewController.swift; sourceTree = "<group>"; };
 		D744A68827B9451600A934D6 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		D744A68A27B9457100A934D6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		D744A68D27B945FE00A934D6 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D744A68F27B97E4300A934D6 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,13 +66,13 @@
 		D744A66227B4512100A934D6 /* Now */ = {
 			isa = PBXGroup;
 			children = (
+				D744A69127B97E4F00A934D6 /* Model */,
 				D744A68C27B9458500A934D6 /* Network */,
 				D744A68727B6E65E00A934D6 /* Supports */,
 				D744A68527B6E62600A934D6 /* ViewControllers */,
 				D744A68627B6E64300A934D6 /* Storyboards */,
 				D744A66C27B4512300A934D6 /* Assets.xcassets */,
 				D744A67127B4512300A934D6 /* Info.plist */,
-				D744A68D27B945FE00A934D6 /* Event.swift */,
 			);
 			path = Now;
 			sourceTree = "<group>";
@@ -87,8 +83,6 @@
 				D744A66727B4512100A934D6 /* BarAndCultureViewController.swift */,
 				D744A67D27B6E40900A934D6 /* BarCategoriesViewController.swift */,
 				D744A67F27B6E58100A934D6 /* CultureCategoriesViewController.swift */,
-				D744A68127B6E5DE00A934D6 /* BarEventTableViewController.swift */,
-				D744A68327B6E60700A934D6 /* CultureEventTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -118,6 +112,14 @@
 				D744A68A27B9457100A934D6 /* NetworkManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		D744A69127B97E4F00A934D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D744A68F27B97E4300A934D6 /* Event.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,11 +194,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D744A68B27B9457100A934D6 /* NetworkManager.swift in Sources */,
-				D744A68227B6E5DE00A934D6 /* BarEventTableViewController.swift in Sources */,
 				D744A66827B4512100A934D6 /* BarAndCultureViewController.swift in Sources */,
 				D744A67E27B6E40900A934D6 /* BarCategoriesViewController.swift in Sources */,
-				D744A68E27B945FE00A934D6 /* Event.swift in Sources */,
-				D744A68427B6E60700A934D6 /* CultureEventTableViewController.swift in Sources */,
+				D744A69027B97E4300A934D6 /* Event.swift in Sources */,
 				D744A68927B9451600A934D6 /* Extentions.swift in Sources */,
 				D744A66427B4512100A934D6 /* AppDelegate.swift in Sources */,
 				D744A68027B6E58100A934D6 /* CultureCategoriesViewController.swift in Sources */,
