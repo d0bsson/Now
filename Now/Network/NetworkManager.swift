@@ -11,6 +11,8 @@ final class Network {
     
     static let shared = Network()
     
+    static let url = "https://kudago.com/public-api/v1.4/events/?lang=ru&fields=dates,title,short_title,slug,place,description,body_text,price,images,site_url&expand=images&location=msk&actual_since= 1644761128"
+    
     func getURL(city location: String, when day: String) -> URL? {
         var components = URLComponents()
         
@@ -29,30 +31,27 @@ final class Network {
         return url
     }
     
-    func fetchData(from url: String?, with complition: @escaping (Event) -> Void) {
-        guard let stringURL = url else { return }
-        guard let url = URL(string: stringURL) else { return }
-        
+    
+    
+    func fetchData(from url: String, completion: @escaping(Result) -> Void) {
+        guard let url = URL(string: url) else { return }
+        print("1")
         URLSession.shared.dataTask(with: url) { (data, _, error) in
-            if let error = error {
-                print(error)
+            guard let data = data else {
+                print(error?.localizedDescription ?? "no descripption")
                 return
             }
             
-            guard let data = data else { return }
-            
             do {
-                let event = try JSONDecoder().decode(Event.self, from: data)
+                let result = try JSONDecoder().decode(Result.self, from: data)
                 DispatchQueue.main.async {
-                    complition(event)
+                    completion(result)
                 }
             } catch let error {
                 print(error)
             }
-            
         }.resume()
     }
-    
     private init() {}
 }
 

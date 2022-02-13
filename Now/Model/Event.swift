@@ -20,10 +20,10 @@ struct Result: Codable {
     let slug: String?
     let place: Place?
     let description: String?
-    let body_text: String?
+    let bodyText: String?
     let price: String?
-    let images: [Images]?
-    let site_url: String?
+    let images: [Image]?
+    let siteURL: String?
 }
 
 struct Dates: Codable {
@@ -35,9 +35,14 @@ struct Place: Codable {
     let id: Int?
 }
 
-struct Images: Codable {
+struct Image: Codable {
     let image: String?
 }
+
+enum CodingKeys: String, CodingKey {
+        case bodyText = "body_text"
+        case siteURL = "site_url"
+    }
 
 
 
