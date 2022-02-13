@@ -9,9 +9,14 @@ import UIKit
 
 class BarAndCultureViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        
+        
         
     }
 
