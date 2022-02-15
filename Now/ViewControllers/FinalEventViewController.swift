@@ -17,20 +17,8 @@ class FinalEventViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchData()
     }
     
     
-    func fetchData() {
-        print("ENTER METHOD \n")
-        Network.shared.fetchData(from: url1) { result in
-            print("IN METHOD \n")
-            print("result = \(result)")
-            self.result = result
-            self.titleLabel.text = result.title
-            
-        }
-    }
-    
-}
+
 

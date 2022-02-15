@@ -8,11 +8,17 @@
 import Foundation
 
 struct Event: Codable {
-    let count: Int
-    let next: String
-    let previous: String?
-    let results: [Result]?
+    let title: String
+    let description: String
+    let url: String
 }
+
+//struct Event: Codable {
+//    let count: Int
+//    let next: String
+//    let previous: String?
+//    let results: [Result]?
+//}
 
 struct Result: Codable {
     let dates: [Dates]?

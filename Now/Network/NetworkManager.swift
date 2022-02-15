@@ -33,7 +33,7 @@ final class Network {
     
     
     
-    func fetchData(from url: String, completion: @escaping(Result) -> Void) {
+    func fetchData(from url: String, completion: @escaping(Event) -> Void) {
         guard let url = URL(string: url) else { return }
         print("1")
         URLSession.shared.dataTask(with: url) { (data, _, error) in
@@ -43,12 +43,13 @@ final class Network {
             }
             
             do {
-                let result = try JSONDecoder().decode(Result.self, from: data)
+                let result = try JSONDecoder().decode(Event.self, from: data)
                 DispatchQueue.main.async {
+                    print("data: \(result)")
                     completion(result)
                 }
             } catch let error {
-                print(error)
+                print(error.localizedDescription)
             }
         }.resume()
     }

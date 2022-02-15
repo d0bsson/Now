@@ -15,7 +15,6 @@
 		D744A67027B4512300A934D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D744A66E27B4512300A934D6 /* LaunchScreen.storyboard */; };
 		D744A67E27B6E40900A934D6 /* BarCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A67D27B6E40900A934D6 /* BarCategoriesViewController.swift */; };
 		D744A68027B6E58100A934D6 /* CultureCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A67F27B6E58100A934D6 /* CultureCategoriesViewController.swift */; };
-		D744A68927B9451600A934D6 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A68827B9451600A934D6 /* Extentions.swift */; };
 		D744A68B27B9457100A934D6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A68A27B9457100A934D6 /* NetworkManager.swift */; };
 		D744A69027B97E4300A934D6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A68F27B97E4300A934D6 /* Event.swift */; };
 		D744A69327B985EE00A934D6 /* FinalEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A69227B985EE00A934D6 /* FinalEventViewController.swift */; };
@@ -32,7 +31,6 @@
 		D744A67127B4512300A934D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D744A67D27B6E40900A934D6 /* BarCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCategoriesViewController.swift; sourceTree = "<group>"; };
 		D744A67F27B6E58100A934D6 /* CultureCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureCategoriesViewController.swift; sourceTree = "<group>"; };
-		D744A68827B9451600A934D6 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		D744A68A27B9457100A934D6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D744A68F27B97E4300A934D6 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		D744A69227B985EE00A934D6 /* FinalEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalEventViewController.swift; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 		D744A68C27B9458500A934D6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				D744A68827B9451600A934D6 /* Extentions.swift */,
 				D744A68A27B9457100A934D6 /* NetworkManager.swift */,
 			);
 			path = Network;
@@ -201,7 +198,6 @@
 				D744A67E27B6E40900A934D6 /* BarCategoriesViewController.swift in Sources */,
 				D744A69027B97E4300A934D6 /* Event.swift in Sources */,
 				D744A69327B985EE00A934D6 /* FinalEventViewController.swift in Sources */,
-				D744A68927B9451600A934D6 /* Extentions.swift in Sources */,
 				D744A66427B4512100A934D6 /* AppDelegate.swift in Sources */,
 				D744A68027B6E58100A934D6 /* CultureCategoriesViewController.swift in Sources */,
 				D744A66627B4512100A934D6 /* SceneDelegate.swift in Sources */,
