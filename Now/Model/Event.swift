@@ -8,17 +8,11 @@
 import Foundation
 
 struct Event: Codable {
-    let title: String
-    let description: String
-    let url: String
+    let count: Int
+    let next: String
+    let previous: String?
+    let results: [Result]?
 }
-
-//struct Event: Codable {
-//    let count: Int
-//    let next: String
-//    let previous: String?
-//    let results: [Result]?
-//}
 
 struct Result: Codable {
     let dates: [Dates]?
@@ -30,6 +24,16 @@ struct Result: Codable {
     let price: String?
     let images: [Image]?
     let siteURL: String?
+    let shortTitle: String?
+    
+    enum CodingKeys: String, CodingKey {
+            case dates, title, slug, place
+            case description = "description"
+            case bodyText = "body_text"
+            case price, images
+            case siteURL = "site_url"
+            case shortTitle = "short_title"
+        }
 }
 
 struct Dates: Codable {
@@ -45,10 +49,7 @@ struct Image: Codable {
     let image: String?
 }
 
-enum CodingKeys: String, CodingKey {
-        case bodyText = "body_text"
-        case siteURL = "site_url"
-    }
+
 
 
 
