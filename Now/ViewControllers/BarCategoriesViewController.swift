@@ -7,6 +7,15 @@
 
 import UIKit
 
-class BarCategoriesViewController: UIViewController {
+class BarCategoriesViewController: UICollectionViewController {
+    
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
     
 }

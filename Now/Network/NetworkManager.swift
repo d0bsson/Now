@@ -53,10 +53,8 @@ final class Network {
             } catch let error {
                 print(error)
             }
-            
         }.resume()
     }
-    
 }
 
 

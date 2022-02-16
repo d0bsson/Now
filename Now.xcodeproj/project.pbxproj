@@ -17,7 +17,8 @@
 		D744A68027B6E58100A934D6 /* CultureCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A67F27B6E58100A934D6 /* CultureCategoriesViewController.swift */; };
 		D744A68B27B9457100A934D6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A68A27B9457100A934D6 /* NetworkManager.swift */; };
 		D744A69027B97E4300A934D6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A68F27B97E4300A934D6 /* Event.swift */; };
-		D744A69327B985EE00A934D6 /* FinalEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A69227B985EE00A934D6 /* FinalEventViewController.swift */; };
+		D744A69327B985EE00A934D6 /* FinalEventBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A69227B985EE00A934D6 /* FinalEventBarViewController.swift */; };
+		D744A69527BD84A300A934D6 /* FinalEventCultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A69427BD84A300A934D6 /* FinalEventCultureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +34,8 @@
 		D744A67F27B6E58100A934D6 /* CultureCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureCategoriesViewController.swift; sourceTree = "<group>"; };
 		D744A68A27B9457100A934D6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D744A68F27B97E4300A934D6 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		D744A69227B985EE00A934D6 /* FinalEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalEventViewController.swift; sourceTree = "<group>"; };
+		D744A69227B985EE00A934D6 /* FinalEventBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalEventBarViewController.swift; sourceTree = "<group>"; };
+		D744A69427BD84A300A934D6 /* FinalEventCultureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalEventCultureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +85,8 @@
 				D744A66727B4512100A934D6 /* BarAndCultureViewController.swift */,
 				D744A67D27B6E40900A934D6 /* BarCategoriesViewController.swift */,
 				D744A67F27B6E58100A934D6 /* CultureCategoriesViewController.swift */,
-				D744A69227B985EE00A934D6 /* FinalEventViewController.swift */,
+				D744A69227B985EE00A934D6 /* FinalEventBarViewController.swift */,
+				D744A69427BD84A300A934D6 /* FinalEventCultureViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -197,7 +200,8 @@
 				D744A66827B4512100A934D6 /* BarAndCultureViewController.swift in Sources */,
 				D744A67E27B6E40900A934D6 /* BarCategoriesViewController.swift in Sources */,
 				D744A69027B97E4300A934D6 /* Event.swift in Sources */,
-				D744A69327B985EE00A934D6 /* FinalEventViewController.swift in Sources */,
+				D744A69527BD84A300A934D6 /* FinalEventCultureViewController.swift in Sources */,
+				D744A69327B985EE00A934D6 /* FinalEventBarViewController.swift in Sources */,
 				D744A66427B4512100A934D6 /* AppDelegate.swift in Sources */,
 				D744A68027B6E58100A934D6 /* CultureCategoriesViewController.swift in Sources */,
 				D744A66627B4512100A934D6 /* SceneDelegate.swift in Sources */,
