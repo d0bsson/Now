@@ -9,7 +9,6 @@ import UIKit
 
 class FinalEventBarViewController: UIViewController {
     
-    @IBOutlet weak var titleLabel: UILabel!
     private var event: Event?
     private let time = String(Int(Date().timeIntervalSince1970))
     
@@ -23,7 +22,6 @@ class FinalEventBarViewController: UIViewController {
         
         print("ENTER METHOD \n")
         Network.shared.fetchData(from: url) { event in
-            self.titleLabel.text = String(event.count)
         }
     }
     

@@ -29,7 +29,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
-                                            <segue destination="0zZ-YR-c5W" kind="show" id="ddn-BY-UGk"/>
+                                            <segue destination="w5h-AL-o69" kind="show" id="0Cf-Vs-FuJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbA-xM-LQI">
@@ -77,7 +77,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cultureCell" id="jk5-vs-JKo">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cultureCell" id="jk5-vs-JKo" customClass="CultureCell" customModule="Now" customModuleProvider="target">
                                 <rect key="frame" x="47" y="0.0" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uiM-js-Kwj">
@@ -103,6 +103,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <outlet property="cultureCellLabel" destination="pjt-1O-yIb" id="sb3-eD-Scn"/>
                                     <segue destination="0eR-hV-BvM" kind="show" id="Xgq-qh-JfM"/>
                                 </connections>
                             </collectionViewCell>
@@ -116,7 +117,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z55-HT-Fli" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2143" y="450"/>
+            <point key="canvasLocation" x="2104" y="450"/>
         </scene>
         <!--Final Event Culture View Controller-->
         <scene sceneID="fwZ-nq-pMS">
@@ -135,62 +136,58 @@
             <point key="canvasLocation" x="3232" y="450"/>
         </scene>
         <!--Bar Categories View Controller-->
-        <scene sceneID="Jdw-Na-dik">
+        <scene sceneID="ktU-40-jJS">
             <objects>
-                <collectionViewController id="0zZ-YR-c5W" customClass="BarCategoriesViewController" customModule="Now" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="bxN-yG-3b5">
+                <collectionViewController id="w5h-AL-o69" customClass="BarCategoriesViewController" customModule="Now" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fOt-5Y-KS6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="40" minimumInteritemSpacing="40" id="pdz-9f-j8d">
-                            <size key="itemSize" width="320" height="100"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="40" minimumInteritemSpacing="40" id="e9W-21-aMy">
+                            <size key="itemSize" width="330" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="barCell" id="xh5-YR-t4K">
-                                <rect key="frame" x="47" y="0.0" width="320" height="100"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="barCell" id="bt4-oE-ijO" customClass="BarCell" customModule="Now" customModuleProvider="target">
+                                <rect key="frame" x="42" y="0.0" width="330" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hWb-Zs-phs">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SAl-Y0-kh9">
+                                    <rect key="frame" x="0.0" y="0.0" width="330" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vae-c8-gsm">
-                                            <rect key="frame" x="139.5" y="40" width="41.5" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8g-bM-EUA">
+                                            <rect key="frame" x="144" y="39.5" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="vae-c8-gsm" firstAttribute="centerX" secondItem="hWb-Zs-phs" secondAttribute="centerX" id="4Ph-g5-zxm"/>
-                                        <constraint firstItem="vae-c8-gsm" firstAttribute="centerY" secondItem="hWb-Zs-phs" secondAttribute="centerY" id="JYQ-Mm-hFs"/>
+                                        <constraint firstItem="V8g-bM-EUA" firstAttribute="centerX" secondItem="SAl-Y0-kh9" secondAttribute="centerX" id="9Uv-az-ErD"/>
+                                        <constraint firstItem="V8g-bM-EUA" firstAttribute="centerY" secondItem="SAl-Y0-kh9" secondAttribute="centerY" id="LOl-nQ-v3Z"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" red="0.52941176469999995" green="0.52964532379999996" blue="0.52964532379999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="mlf-fx-LaT" kind="show" id="vuy-wS-deP"/>
+                                    <outlet property="barCellLabel" destination="V8g-bM-EUA" id="dR2-E9-yoc"/>
+                                    <segue destination="mlf-fx-LaT" kind="show" id="9dq-gn-lk2"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="0zZ-YR-c5W" id="e4F-hi-Uw0"/>
-                            <outlet property="delegate" destination="0zZ-YR-c5W" id="ykw-qu-XTb"/>
+                            <outlet property="dataSource" destination="w5h-AL-o69" id="IIN-ln-KE1"/>
+                            <outlet property="delegate" destination="w5h-AL-o69" id="L9B-9A-k5T"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="rj7-Uv-jrr"/>
+                    <navigationItem key="navigationItem" id="DMj-yq-rfm"/>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sXb-uV-4cW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMN-rZ-DK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2155" y="-228"/>
+            <point key="canvasLocation" x="2133" y="-228"/>
         </scene>
-        <!--hello-->
+        <!--Final Event Bar View Controller-->
         <scene sceneID="ILq-H3-dq9">
             <objects>
                 <viewController id="mlf-fx-LaT" customClass="FinalEventBarViewController" customModule="Now" customModuleProvider="target" sceneMemberID="viewController">
@@ -200,7 +197,7 @@
                         <viewLayoutGuide key="safeArea" id="aDp-bJ-vxL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="hello" id="Mdm-km-7Eo"/>
+                    <navigationItem key="navigationItem" id="Mdm-km-7Eo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4b-Fd-POe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,9 +224,6 @@
     </scenes>
     <resources>
         <image name="layer" width="1048" height="838"/>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

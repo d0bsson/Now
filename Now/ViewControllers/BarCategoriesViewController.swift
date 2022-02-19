@@ -9,15 +9,16 @@ import UIKit
 
 class BarCategoriesViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    let category: [Category] = []
+    let bars: [Bar] = []
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        category.count
+        1
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "barCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "barCell", for: indexPath) as! BarCell
         
+        cell.barCellLabel.text = bars[indexPath.item].name
         return cell
     }
     
