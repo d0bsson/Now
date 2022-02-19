@@ -19,6 +19,7 @@
 		D744A69027B97E4300A934D6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A68F27B97E4300A934D6 /* Event.swift */; };
 		D744A69327B985EE00A934D6 /* FinalEventBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A69227B985EE00A934D6 /* FinalEventBarViewController.swift */; };
 		D744A69527BD84A300A934D6 /* FinalEventCultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A69427BD84A300A934D6 /* FinalEventCultureViewController.swift */; };
+		D744A69927C1417C00A934D6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A69827C1417C00A934D6 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D744A68F27B97E4300A934D6 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		D744A69227B985EE00A934D6 /* FinalEventBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalEventBarViewController.swift; sourceTree = "<group>"; };
 		D744A69427BD84A300A934D6 /* FinalEventCultureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalEventCultureViewController.swift; sourceTree = "<group>"; };
+		D744A69827C1417C00A934D6 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				D744A68F27B97E4300A934D6 /* Event.swift */,
+				D744A69827C1417C00A934D6 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D744A68B27B9457100A934D6 /* NetworkManager.swift in Sources */,
+				D744A69927C1417C00A934D6 /* Category.swift in Sources */,
 				D744A66827B4512100A934D6 /* BarAndCultureViewController.swift in Sources */,
 				D744A67E27B6E40900A934D6 /* BarCategoriesViewController.swift in Sources */,
 				D744A69027B97E4300A934D6 /* Event.swift in Sources */,

@@ -7,6 +7,6 @@
 
 import UIKit
 
-class CultureCategoriesViewController: UIViewController {
+class CultureCategoriesViewController: UICollectionViewController {
     
 }

@@ -24,7 +24,6 @@ struct Result: Codable {
     let price: String?
     let images: [Image]?
     let siteURL: String?
-    let shortTitle: String?
     
     enum CodingKeys: String, CodingKey {
             case dates, title, slug, place
@@ -32,7 +31,6 @@ struct Result: Codable {
             case bodyText = "body_text"
             case price, images
             case siteURL = "site_url"
-            case shortTitle = "short_title"
         }
 }
 
