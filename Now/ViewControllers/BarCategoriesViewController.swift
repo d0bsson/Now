@@ -9,15 +9,21 @@ import UIKit
 
 class BarCategoriesViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    let bars: [Bar] = []
+    var bars: [Bar] = []
+    
+    private let url = "https://kudago.com/public-api/v1.2/event-categories/?lang=ru"
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        fetchData()
+    }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        1
+        bars.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "barCell", for: indexPath) as! BarCell
-        
         cell.barCellLabel.text = bars[indexPath.item].name
         return cell
     }
@@ -26,5 +32,24 @@ class BarCategoriesViewController: UICollectionViewController, UICollectionViewD
         CGSize(width: UIScreen.main.bounds.width - 48, height: 100)
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let item = bars[indexPath.item].slug ?? "unowed"
+        
+        switch item {
+            
+        case "business-events":
+            print("SUCSESS \(item)")
+        default:
+            break
+        }
+    }
+    
+    func fetchData() {
+        Network.shared.fetchCategories(from: url) { categoryes in
+            self.bars = categoryes
+            self.collectionView.reloadData()
+        }
+    }
     
 }

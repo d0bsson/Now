@@ -35,10 +35,8 @@ final class Network {
     
     func fetchData(from url: String, with complition: @escaping (Event) -> Void) {
         guard let urlString = URL(string: url) else { return }
-        print("in url \n")
         URLSession.shared.dataTask(with: urlString) { (data, _, error) in
             if let error = error {
-                print("in error \n")
                 print(error)
                 return
             }
@@ -58,7 +56,6 @@ final class Network {
     
     func fetchCategories(from url: String, with comlition: @escaping ([Bar]) -> Void) {
         guard let urlString = URL(string: url) else { return }
-        
         URLSession.shared.dataTask(with: urlString) { data, _, error in
             if let error = error {
                 print(error)

@@ -19,10 +19,11 @@ class FinalEventBarViewController: UIViewController {
     
     private func fetchData(time: String) {
         let url = "https://kudago.com/public-api/v1.4/events/?lang=ru&fields=dates,title,short_title,slug,place,description,body_text,price,images,site_url&expand=images&location=msk&actual_since=\(time)"
-        
-        print("ENTER METHOD \n")
+
         Network.shared.fetchData(from: url) { event in
+//            print(event)
         }
+
     }
     
 }
