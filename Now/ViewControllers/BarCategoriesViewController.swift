@@ -33,11 +33,9 @@ class BarCategoriesViewController: UICollectionViewController, UICollectionViewD
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         let item = bars[indexPath.item].slug ?? "unowed"
         
         switch item {
-            
         case "business-events":
             print("SUCSESS \(item)")
         default:
@@ -45,10 +43,10 @@ class BarCategoriesViewController: UICollectionViewController, UICollectionViewD
         }
     }
     
-    func fetchData() {
-        Network.shared.fetchCategories(from: url) { categoryes in
-            self.bars = categoryes
-            self.collectionView.reloadData()
+    private func fetchData() {
+        Network.shared.fetchBarCategories(from: url) { [weak self] bar in
+            self?.bars = bar
+            self?.collectionView.reloadData()
         }
     }
     
