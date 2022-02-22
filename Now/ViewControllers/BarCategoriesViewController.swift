@@ -11,7 +11,7 @@ class BarCategoriesViewController: UICollectionViewController, UICollectionViewD
     
     var bars: [Bar] = []
     
-    private let url = "https://kudago.com/public-api/v1.2/event-categories/?lang=ru"
+    private let urlBar = "https://kudago.com/public-api/v1.2/event-categories/?lang=ru"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +28,10 @@ class BarCategoriesViewController: UICollectionViewController, UICollectionViewD
         return cell
     }
     
+
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: UIScreen.main.bounds.width - 48, height: 100)
+        CGSize(width: UIScreen.main.bounds.width - 48, height: UIScreen.main.bounds.height / 6)
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -84,7 +86,7 @@ class BarCategoriesViewController: UICollectionViewController, UICollectionViewD
     }
     
     private func fetchData() {
-        Network.shared.fetchBarCategories(from: url) { [weak self] bar in
+        Network.shared.fetchBarCategories(from: urlBar) { [weak self] bar in
             self?.bars = bar
             self?.collectionView.reloadData()
         }

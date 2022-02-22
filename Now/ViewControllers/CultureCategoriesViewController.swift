@@ -11,7 +11,7 @@ class CultureCategoriesViewController: UICollectionViewController, UICollectionV
     
     var cultures: [Culture] = []
     
-    private let url = "https://kudago.com/public-api/v1.2/place-categories/?lang=ru"
+    private let urlCulture = "https://kudago.com/public-api/v1.2/place-categories/?lang=ru"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class CultureCategoriesViewController: UICollectionViewController, UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: UIScreen.main.bounds.width - 48, height: 100)
+        CGSize(width: UIScreen.main.bounds.width - 48, height: UIScreen.main.bounds.height / 6)
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -149,10 +149,8 @@ class CultureCategoriesViewController: UICollectionViewController, UICollectionV
         }
     }
     
-    
-    
     private func fetchData() {
-        Network.shared.fetchCultureCategories(from: url) { [weak self] culture in
+        Network.shared.fetchCultureCategories(from: urlCulture) { [weak self] culture in
             self?.cultures = culture
             self?.collectionView.reloadData()
         }

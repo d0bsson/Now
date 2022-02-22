@@ -27,7 +27,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="254" height="31"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="События"/>
                                         <connections>
                                             <segue destination="w5h-AL-o69" kind="show" id="0Cf-Vs-FuJ"/>
                                         </connections>
@@ -36,7 +36,7 @@
                                         <rect key="frame" x="0.0" y="112" width="254" height="31"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Места"/>
                                         <connections>
                                             <segue destination="TYK-lK-Y83" kind="show" id="abr-tt-dSM"/>
                                         </connections>
@@ -144,29 +144,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="40" minimumInteritemSpacing="40" id="e9W-21-aMy">
-                            <size key="itemSize" width="330" height="100"/>
+                            <size key="itemSize" width="320" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="barCell" id="bt4-oE-ijO" customClass="BarCell" customModule="Now" customModuleProvider="target">
-                                <rect key="frame" x="42" y="0.0" width="330" height="100"/>
+                                <rect key="frame" x="47" y="0.0" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SAl-Y0-kh9">
-                                    <rect key="frame" x="0.0" y="0.0" width="330" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8g-bM-EUA">
-                                            <rect key="frame" x="144" y="39.5" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8g-bM-EUA">
+                                            <rect key="frame" x="100" y="40" width="120" height="20.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="120" id="qXZ-2v-t1z"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="V8g-bM-EUA" firstAttribute="centerX" secondItem="SAl-Y0-kh9" secondAttribute="centerX" id="9Uv-az-ErD"/>
-                                        <constraint firstItem="V8g-bM-EUA" firstAttribute="centerY" secondItem="SAl-Y0-kh9" secondAttribute="centerY" id="LOl-nQ-v3Z"/>
+                                        <constraint firstItem="V8g-bM-EUA" firstAttribute="centerX" secondItem="SAl-Y0-kh9" secondAttribute="centerX" id="Zqa-Jz-Ul3"/>
+                                        <constraint firstItem="V8g-bM-EUA" firstAttribute="centerY" secondItem="SAl-Y0-kh9" secondAttribute="centerY" id="fyl-NY-o3g"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" red="0.52941176469999995" green="0.52964532379999996" blue="0.52964532379999996" alpha="1" colorSpace="calibratedRGB"/>
