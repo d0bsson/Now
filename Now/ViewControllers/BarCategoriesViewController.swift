@@ -38,6 +38,46 @@ class BarCategoriesViewController: UICollectionViewController, UICollectionViewD
         switch item {
         case "business-events":
             print("SUCSESS \(item)")
+        case "cinema":
+            print("SUCSESS \(item)")
+        case "concert":
+            print("SUCSESS \(item)")
+        case "education":
+            print("SUCSESS \(item)")
+        case "entertainment":
+            print("SUCSESS \(item)")
+        case "exhibition":
+            print("SUCSESS \(item)")
+        case "fashion":
+            print("SUCSESS \(item)")
+        case "festival":
+            print("SUCSESS \(item)")
+        case "holiday":
+            print("SUCSESS \(item)")
+        case "kids":
+            print("SUCSESS \(item)")
+        case "other":
+            print("SUCSESS \(item)")
+        case "party":
+            print("SUCSESS \(item)")
+        case "photo":
+            print("SUCSESS \(item)")
+        case "quest":
+            print("SUCSESS \(item)")
+        case "recreation":
+            print("SUCSESS \(item)")
+        case "shopping":
+            print("SUCSESS \(item)")
+        case "social-activity":
+            print("SUCSESS \(item)")
+        case "stock":
+            print("SUCSESS \(item)")
+        case "theater":
+            print("SUCSESS \(item)")
+        case "tour":
+            print("SUCSESS \(item)")
+        case "yarmarki-razvlecheniya-yarmarki":
+            print("SUCSESS \(item)")
         default:
             break
         }
