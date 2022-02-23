@@ -180,7 +180,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="barCellLabel" destination="V8g-bM-EUA" id="dR2-E9-yoc"/>
-                                    <segue destination="mlf-fx-LaT" kind="show" id="9dq-gn-lk2"/>
+                                    <segue destination="mlf-fx-LaT" kind="show" identifier="bar" id="9dq-gn-lk2"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

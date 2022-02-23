@@ -9,22 +9,22 @@ import UIKit
 
 class FinalEventBarViewController: UIViewController {
     
-    private var event: Event?
+    private var events: Event?
     private let time = String(Int(Date().timeIntervalSince1970))
+    
+    var item = "123"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchData(time: time)
+//        fetchData(time: time, item: item)
+        print(item)
     }
     
-    private func fetchData(time: String) {
-        let url = "https://kudago.com/public-api/v1.4/events/?lang=ru&fields=dates,title,short_title,slug,place,description,body_text,price,images,site_url&expand=images&location=msk&actual_since=\(time)"
-
-        Network.shared.fetchData(from: url) { event in
-//            print(event)
-        }
-
+    private func fetchData(time: String, item: String) {
+//        let url = "https://kudago.com/public-api/v1.4/events/?lang=ru&fields=dates,title,short_title,slug,place,description,body_text,price,images,site_url&categories=\(item)&expand=images&location=msk&actual_since=\(time)"
+//        Network.shared.fetchData(from: url) { result in
+//            print(result.results?.randomElement() ?? "")
+//        }
     }
-    
 }
 
