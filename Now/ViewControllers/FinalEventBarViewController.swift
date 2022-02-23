@@ -9,10 +9,12 @@ import UIKit
 
 class FinalEventBarViewController: UIViewController {
     
+    var completionHandler: ((String) -> Int)?
+    
     private var events: Event?
     private let time = String(Int(Date().timeIntervalSince1970))
     
-    var item = "123"
+    var item = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -198,7 +198,7 @@
         <!--Final Event Bar View Controller-->
         <scene sceneID="ILq-H3-dq9">
             <objects>
-                <viewController id="mlf-fx-LaT" customClass="FinalEventBarViewController" customModule="Now" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="randomBar" id="mlf-fx-LaT" customClass="FinalEventBarViewController" customModule="Now" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="unL-0W-hpc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

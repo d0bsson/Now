@@ -7,8 +7,8 @@
 
 import UIKit
 
-class BarCategoriesViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-    
+class BarCategoriesViewController: UICollectionViewController {
+
     var bars: [Bar] = []
     
     private let urlBar = "https://kudago.com/public-api/v1.2/event-categories/?lang=ru"
@@ -37,7 +37,7 @@ class BarCategoriesViewController: UICollectionViewController, UICollectionViewD
         
         switch item {
         case "business-events": print("SUCSESS \(item)")
-        case "cinema":          print("SUCSESS \(item)")
+        case "cinema":          tranferItem(item: item)
         case "concert":         print("SUCSESS \(item)")
         case "education":       print("SUCSESS \(item)")
         case "entertainment":   print("SUCSESS \(item)")
@@ -68,4 +68,10 @@ class BarCategoriesViewController: UICollectionViewController, UICollectionViewD
             self?.collectionView.reloadData()
         }
     }
+}
+
+private func tranferItem(item: String) {
+    let vc = FinalEventBarViewController()
+    vc.item = item
+    print("321")
 }
