@@ -12,7 +12,7 @@ final class Network {
     static let shared = Network()
     private init() {}
     
-    func fetchData(from url: String, with complition: @escaping (Event) -> Void) {
+    func fetchEventData(from url: String, with complition: @escaping (Event) -> Void) {
         guard let urlString = URL(string: url) else { return }
         URLSession.shared.dataTask(with: urlString) { (data, _, error) in
             if let error = error {
@@ -53,6 +53,28 @@ final class Network {
             }
         }.resume()
     }
+    
+    func fetchPlaceData(from url: String, with complition: @escaping (Place) -> Void) {
+        guard let urlString = URL(string: url) else { return }
+        URLSession.shared.dataTask(with: urlString) { (data, _, error) in
+            if let error = error {
+                print(error)
+                return
+            }
+            
+            guard let data = data else { return }
+            
+            do {
+                let result = try JSONDecoder().decode(Place.self, from: data)
+                DispatchQueue.main.async {
+                    complition(result)
+                }
+            } catch let error {
+                print(error)
+            }
+        }.resume()
+    }
+    
     
     func fetchCultureCategories(from url: String, with comlition: @escaping ([Culture]) -> Void) {
         guard let urlString = URL(string: url) else { return }
