@@ -9,7 +9,9 @@ import UIKit
 
 class BarCategoriesViewController: UICollectionViewController {
 
+    private let time = String(Int(Date().timeIntervalSince1970))
     var bars: [Bar] = []
+    var qq = ""
     
     private let urlBar = "https://kudago.com/public-api/v1.2/event-categories/?lang=ru"
     
@@ -25,6 +27,7 @@ class BarCategoriesViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "barCell", for: indexPath) as! BarCell
         cell.barCellLabel.text = bars[indexPath.item].name
+        
         return cell
     }
     
@@ -36,31 +39,30 @@ class BarCategoriesViewController: UICollectionViewController {
         let item = bars[indexPath.item].slug ?? "unowed"
         
         switch item {
-        case "business-events": print("SUCSESS \(item)")
-        case "cinema":          tranferItem(item: item)
-        case "concert":         print("SUCSESS \(item)")
-        case "education":       print("SUCSESS \(item)")
-        case "entertainment":   print("SUCSESS \(item)")
-        case "exhibition":      print("SUCSESS \(item)")
-        case "fashion":         print("SUCSESS \(item)")
-        case "festival":        print("SUCSESS \(item)")
-        case "holiday":         print("SUCSESS \(item)")
-        case "kids":            print("SUCSESS \(item)")
-        case "other":           print("SUCSESS \(item)")
-        case "party":           print("SUCSESS \(item)")
-        case "photo":           print("SUCSESS \(item)")
-        case "quest":           print("SUCSESS \(item)")
-        case "recreation":      print("SUCSESS \(item)")
-        case "shopping":        print("SUCSESS \(item)")
-        case "social-activity": print("SUCSESS \(item)")
-        case "stock":           print("SUCSESS \(item)")
-        case "theater":         print("SUCSESS \(item)")
-        case "tour":            print("SUCSESS \(item)")
-        case "yarmarki-razvlecheniya-yarmarki": print("SUCSESS \(item)")
-        default:
-            break
+        case "business-events": tranferItem(time: time, item: item)
+        case "cinema":          tranferItem(time: time, item: item)
+        case "concert":         tranferItem(time: time, item: item)
+        case "education":       tranferItem(time: time, item: item)
+        case "entertainment":   tranferItem(time: time, item: item)
+        case "exhibition":      tranferItem(time: time, item: item)
+        case "fashion":         tranferItem(time: time, item: item)
+        case "festival":        tranferItem(time: time, item: item)
+        case "holiday":         tranferItem(time: time, item: item)
+        case "kids":            tranferItem(time: time, item: item)
+        case "other":           tranferItem(time: time, item: item)
+        case "party":           tranferItem(time: time, item: item)
+        case "photo":           tranferItem(time: time, item: item)
+        case "quest":           tranferItem(time: time, item: item)
+        case "recreation":      tranferItem(time: time, item: item)
+        case "shopping":        tranferItem(time: time, item: item)
+        case "social-activity": tranferItem(time: time, item: item)
+        case "stock":           tranferItem(time: time, item: item)
+        case "theater":         tranferItem(time: time, item: item)
+        case "tour":            tranferItem(time: time, item: item)
+        default:                tranferItem(time: time, item: item)
         }
     }
+
     
     private func fetchData() {
         Network.shared.fetchBarCategories(from: urlBar) { [weak self] bar in
@@ -68,10 +70,13 @@ class BarCategoriesViewController: UICollectionViewController {
             self?.collectionView.reloadData()
         }
     }
+    
+    private func tranferItem(time: String, item: String) {
+        let vc = FinalEventBarViewController()
+        vc.fetchData(time: time, item: item)
+        vc.item = item
+        print("\(item)")
+    }
 }
 
-private func tranferItem(item: String) {
-    let vc = FinalEventBarViewController()
-    vc.item = item
-    print("321")
-}
+

@@ -8,8 +8,8 @@
 import Foundation
 
 struct Event: Codable {
-    let count: Int
-    let next: String
+    let count: Int?
+    let next: String?
     let previous: String?
     let results: [Result]?
 }
