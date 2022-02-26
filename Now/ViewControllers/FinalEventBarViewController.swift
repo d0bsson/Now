@@ -8,14 +8,10 @@
 import UIKit
 
 class FinalEventBarViewController: UIViewController {
-        
-    private var events: Event?
-    private let time = String(Int(Date().timeIntervalSince1970))
     var item = ""
         
     override func viewDidLoad() {
         super.viewDidLoad()
-//        fetchData(time: time, item: item)
     }
     
     func fetchData(time: String, item: String) {

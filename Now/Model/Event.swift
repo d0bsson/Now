@@ -11,14 +11,14 @@ struct Event: Codable {
     let count: Int?
     let next: String?
     let previous: String?
-    let results: [Result]?
+    let results: [BarResult]?
 }
 
-struct Result: Codable {
+struct BarResult: Codable {
     let dates: [Dates]?
     let title: String?
     let slug: String?
-    let place: Place?
+    let place: BarPlace?
     let description: String?
     let bodyText: String?
     let price: String?
@@ -39,7 +39,7 @@ struct Dates: Codable {
     let end: Int?
 }
 
-struct Place: Codable {
+struct BarPlace: Codable {
     let id: Int?
 }
 

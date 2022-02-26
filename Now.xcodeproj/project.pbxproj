@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D724D73C27CA9DD90026FF22 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = D724D73B27CA9DD90026FF22 /* Place.swift */; };
 		D744A66427B4512100A934D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A66327B4512100A934D6 /* AppDelegate.swift */; };
 		D744A66627B4512100A934D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A66527B4512100A934D6 /* SceneDelegate.swift */; };
 		D744A66827B4512100A934D6 /* BarAndCultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A66727B4512100A934D6 /* BarAndCultureViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D724D73B27CA9DD90026FF22 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		D744A66027B4512100A934D6 /* Now.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Now.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D744A66327B4512100A934D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D744A66527B4512100A934D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				D744A68F27B97E4300A934D6 /* Event.swift */,
 				D744A69827C1417C00A934D6 /* Bar.swift */,
 				D744A69A27C1505800A934D6 /* Culture.swift */,
+				D724D73B27CA9DD90026FF22 /* Place.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				D744A69927C1417C00A934D6 /* Bar.swift in Sources */,
 				D744A66827B4512100A934D6 /* BarAndCultureViewController.swift in Sources */,
 				D744A67E27B6E40900A934D6 /* BarCategoriesViewController.swift in Sources */,
+				D724D73C27CA9DD90026FF22 /* Place.swift in Sources */,
 				D744A69027B97E4300A934D6 /* Event.swift in Sources */,
 				D744A69527BD84A300A934D6 /* FinalEventCultureViewController.swift in Sources */,
 				D744A69327B985EE00A934D6 /* FinalEventBarViewController.swift in Sources */,

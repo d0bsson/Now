@@ -9,11 +9,10 @@ import UIKit
 
 class BarCategoriesViewController: UICollectionViewController {
 
-    private let time = String(Int(Date().timeIntervalSince1970))
     var bars: [Bar] = []
-    var qq = ""
     
-    private let urlBar = "https://kudago.com/public-api/v1.2/event-categories/?lang=ru"
+    private let time = String(Int(Date().timeIntervalSince1970))
+    private let urlBar = "https://kudago.com/public-api/v1.4/event-categories/?lang=ru"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +61,12 @@ class BarCategoriesViewController: UICollectionViewController {
         default:                tranferItem(time: time, item: item)
         }
     }
-
+    
+    private func tranferItem(time: String, item: String) {
+        let vc = FinalEventBarViewController()
+        vc.fetchData(time: time, item: item)
+        vc.item = item
+    }
     
     private func fetchData() {
         Network.shared.fetchBarCategories(from: urlBar) { [weak self] bar in
@@ -71,12 +75,7 @@ class BarCategoriesViewController: UICollectionViewController {
         }
     }
     
-    private func tranferItem(time: String, item: String) {
-        let vc = FinalEventBarViewController()
-        vc.fetchData(time: time, item: item)
-        vc.item = item
-        print("\(item)")
-    }
+    
 }
 
 
