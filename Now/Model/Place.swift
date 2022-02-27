@@ -9,19 +9,19 @@ import Foundation
 
 struct Place: Codable {
     let count: Int?
-    let next: Int?
+    let next: String?
     let previous: Int?
     let results: [BarResult]?
 }
 
 struct PlaceResult: Codable {
-    let id: Int
-    let title, slug, address, phone: String
-    let siteURL: String
-    let subway: String
-    let isClosed: Bool
-    let location: String
-    let hasParkingLot: Bool
+    let id: Int?
+    let title, slug, address, phone: String?
+    let siteURL: String?
+    let subway: String?
+    let isClosed: Bool?
+    let location: String?
+    let hasParkingLot: Bool?
 
     enum CodingKeys: String, CodingKey {
         case id, title, slug, address, phone

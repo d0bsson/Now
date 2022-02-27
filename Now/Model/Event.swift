@@ -22,7 +22,7 @@ struct BarResult: Codable {
     let description: String?
     let bodyText: String?
     let price: String?
-    let images: [Image]?
+    var images: [Image]?
     let siteURL: String?
     
     enum CodingKeys: String, CodingKey {
