@@ -12,27 +12,6 @@ final class Network {
     static let shared = Network()
     private init() {}
     
-    func fetchBarResult(from url: String, with complition: @escaping (BarResult) -> Void) {
-        guard let urlString = URL(string: url) else { return }
-        URLSession.shared.dataTask(with: urlString) { (data, _, error) in
-            if let error = error {
-                print(error)
-                return
-            }
-            
-            guard let data = data else { return }
-            
-            do {
-                let result = try JSONDecoder().decode(BarResult.self, from: data)
-                DispatchQueue.main.async {
-                    complition(result)
-                }
-            } catch let error {
-                print(error)
-            }
-        }.resume()
-    }
-    
     func fetchEventData(from url: String, with complition: @escaping (Event) -> Void) {
         guard let urlString = URL(string: url) else { return }
         URLSession.shared.dataTask(with: urlString) { (data, _, error) in
@@ -117,6 +96,18 @@ final class Network {
             }
         }.resume()
     }
+}
+
+final class ImageManager {
+    static let shared = ImageManager()
+    
+    func fetchImage(from url: String?) -> Data? {
+        guard let stringURL = url else { return nil }
+        guard let imageURL = URL(string: stringURL) else { return nil }
+        return try? Data(contentsOf: imageURL)
+    }
+    
+    init() {}
 }
 
 
