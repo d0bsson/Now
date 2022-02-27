@@ -180,7 +180,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="barCellLabel" destination="V8g-bM-EUA" id="dR2-E9-yoc"/>
-                                    <segue destination="mlf-fx-LaT" kind="show" identifier="bar" id="9dq-gn-lk2"/>
+                                    <segue destination="Mbw-DI-FM5" kind="show" identifier="barCell" id="kzc-vG-FlC"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -195,21 +195,40 @@
             </objects>
             <point key="canvasLocation" x="2133" y="-228"/>
         </scene>
-        <!--Final Event Bar View Controller-->
-        <scene sceneID="ILq-H3-dq9">
+        <!--Collection View Controller-->
+        <scene sceneID="3r8-Ly-zmD">
             <objects>
-                <viewController storyboardIdentifier="randomBar" id="mlf-fx-LaT" customClass="FinalEventBarViewController" customModule="Now" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="unL-0W-hpc">
+                <collectionViewController id="Mbw-DI-FM5" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="b6j-ay-6ys">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="aDp-bJ-vxL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Mdm-km-7Eo"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C4b-Fd-POe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="otO-j3-fTr">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="EW1-vX-JFD">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1Hv-G1-5PN">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Mbw-DI-FM5" id="b50-2J-MsX"/>
+                            <outlet property="delegate" destination="Mbw-DI-FM5" id="Vh2-Yb-Obo"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="yH8-ha-kTM"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fr0-jb-6XW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3231.884057971015" y="-228.34821428571428"/>
+            <point key="canvasLocation" x="3232" y="-228"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C0l-VC-AHT">
