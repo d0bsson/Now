@@ -34,6 +34,10 @@ struct BarResult: Codable {
         }
 }
 
+struct Image: Codable {
+    let image: String?
+}
+
 struct Dates: Codable {
     let start: Int?
     let end: Int?
@@ -43,9 +47,7 @@ struct BarPlace: Codable {
     let id: Int?
 }
 
-struct Image: Codable {
-    let image: String?
-}
+
 
 
 
