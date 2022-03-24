@@ -206,7 +206,7 @@
         <scene sceneID="ktU-40-jJS">
             <objects>
                 <collectionViewController id="w5h-AL-o69" customClass="BarCategoriesViewController" customModule="Now" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fOt-5Y-KS6">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fOt-5Y-KS6" customClass="Gradient" customModule="Now" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -250,6 +250,14 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topGradientColor">
+                                <color key="value" red="0.82352941180000006" green="0.98039215690000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomGradientColor">
+                                <color key="value" red="0.82352941180000006" green="0.70588235290000001" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="w5h-AL-o69" id="IIN-ln-KE1"/>
                             <outlet property="delegate" destination="w5h-AL-o69" id="L9B-9A-k5T"/>

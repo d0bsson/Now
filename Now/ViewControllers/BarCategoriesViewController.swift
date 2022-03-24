@@ -17,7 +17,7 @@ class BarCategoriesViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
-        getGradient()
+//        getGradient()
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -77,7 +77,6 @@ class BarCategoriesViewController: UICollectionViewController {
             self.collectionView.reloadData()
         }
     }
-    
     
     private func getGradient() {
         let gradientLayer = CAGradientLayer()

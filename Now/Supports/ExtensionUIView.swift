@@ -93,16 +93,15 @@ extension UIView {
         }
     }
     
-    func gradient(colors: [CGColor], startPoint: CGPoint, endPoint: CGPoint, opacity: Float, location: [NSNumber]?) {
-            let gradientLayer = CAGradientLayer()
-            gradientLayer.frame = bounds
-            gradientLayer.colors = colors
-            gradientLayer.startPoint = startPoint
-            gradientLayer.endPoint = endPoint
-            gradientLayer.opacity = opacity
-            gradientLayer.locations = location
-            layer.addSublayer(gradientLayer)
-        }
+    public func setTwoGradient (colorOne: UIColor, colorTwo: UIColor) {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = bounds
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+        
+        layer.insertSublayer(gradientLayer, at: 0)
+    }
 }
 
 
