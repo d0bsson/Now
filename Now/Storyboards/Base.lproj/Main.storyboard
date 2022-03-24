@@ -17,43 +17,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer" translatesAutoresizingMaskIntoConstraints="NO" id="9ba-ed-zrf">
-                                <rect key="frame" x="40" y="220" width="334" height="466"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="81" translatesAutoresizingMaskIntoConstraints="NO" id="NA6-Uy-xQW">
-                                <rect key="frame" x="80" y="320" width="254" height="143"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trk-kK-8Ke">
-                                        <rect key="frame" x="0.0" y="0.0" width="254" height="31"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="События"/>
-                                        <connections>
-                                            <segue destination="w5h-AL-o69" kind="show" id="0Cf-Vs-FuJ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbA-xM-LQI">
-                                        <rect key="frame" x="0.0" y="112" width="254" height="31"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Места"/>
-                                        <connections>
-                                            <segue destination="TYK-lK-Y83" kind="show" id="abr-tt-dSM"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trk-kK-8Ke">
+                                <rect key="frame" x="20" y="253" width="374" height="160"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="hSJ-GC-k37"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="События сегодня"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="w5h-AL-o69" kind="show" id="0Cf-Vs-FuJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbA-xM-LQI">
+                                <rect key="frame" x="20" y="530" width="374" height="160"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="KKW-4c-ite"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Места сегодня"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="TYK-lK-Y83" kind="show" id="abr-tt-dSM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.48114120648259306" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NA6-Uy-xQW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="2id-a3-o7I"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9ba-ed-zrf" secondAttribute="bottom" constant="176" id="9Fe-AX-OUd"/>
-                            <constraint firstItem="NA6-Uy-xQW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="GIR-kD-IGI"/>
-                            <constraint firstItem="9ba-ed-zrf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="WmL-os-ojE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NA6-Uy-xQW" secondAttribute="trailing" constant="80" id="cBI-WI-cyc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9ba-ed-zrf" secondAttribute="trailing" constant="40" id="i3k-sm-3SQ"/>
-                            <constraint firstItem="9ba-ed-zrf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="naw-gt-Mtt"/>
+                            <constraint firstItem="LbA-xM-LQI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2TJ-g9-h9m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LbA-xM-LQI" secondAttribute="trailing" constant="20" id="9em-1s-Pjw"/>
+                            <constraint firstItem="trk-kK-8Ke" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9js-b0-DN5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="trk-kK-8Ke" secondAttribute="trailing" constant="20" id="Cgl-yf-brt"/>
+                            <constraint firstItem="LbA-xM-LQI" firstAttribute="top" secondItem="trk-kK-8Ke" secondAttribute="bottom" constant="117" id="aSE-3k-hUf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LbA-xM-LQI" secondAttribute="bottom" constant="172" id="fhr-tb-Bow"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Выбирай" id="4hL-pl-7tQ"/>
@@ -122,7 +129,7 @@
         <!--Final Event Culture View Controller-->
         <scene sceneID="fwZ-nq-pMS">
             <objects>
-                <viewController id="0eR-hV-BvM" customClass="FinalEventCultureViewController" customModule="Now" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="culture" id="0eR-hV-BvM" customClass="FinalEventCultureViewController" customModule="Now" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ye2-cp-5GC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,7 +187,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="barCellLabel" destination="V8g-bM-EUA" id="dR2-E9-yoc"/>
-                                    <segue destination="6H6-NT-BtO" kind="show" id="0Zp-Rg-B7e"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -198,7 +204,7 @@
         <!--Final Event Bar View Controller-->
         <scene sceneID="Lxt-Pu-qDf">
             <objects>
-                <viewController id="6H6-NT-BtO" customClass="FinalEventBarViewController" customModule="Now" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="bar" id="6H6-NT-BtO" customClass="FinalEventBarViewController" customModule="Now" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z3b-SR-ZhC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -210,22 +216,33 @@
                                     <constraint firstAttribute="width" constant="240" id="yfB-i0-29P"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLC-Ro-0XH">
+                                <rect key="frame" x="20" y="44" width="42" height="117"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mqu-5h-HXf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="bLC-Ro-0XH" secondAttribute="trailing" constant="352" id="2fL-dp-GuO"/>
+                            <constraint firstItem="bLC-Ro-0XH" firstAttribute="top" secondItem="Mqu-5h-HXf" secondAttribute="top" id="I5L-kG-Vp9"/>
+                            <constraint firstItem="bLC-Ro-0XH" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="ILe-HM-ViU"/>
                             <constraint firstItem="MOG-kK-70K" firstAttribute="centerY" secondItem="Z3b-SR-ZhC" secondAttribute="centerY" id="Pq1-4z-bRc"/>
+                            <constraint firstItem="Mqu-5h-HXf" firstAttribute="bottom" secondItem="bLC-Ro-0XH" secondAttribute="bottom" constant="701" id="p7r-6S-jK4"/>
                             <constraint firstItem="MOG-kK-70K" firstAttribute="centerX" secondItem="Z3b-SR-ZhC" secondAttribute="centerX" id="puQ-Hh-iQM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="thU-v9-0bK"/>
                     <connections>
                         <outlet property="eventImage" destination="MOG-kK-70K" id="CeO-ai-r4g"/>
+                        <outlet property="label" destination="bLC-Ro-0XH" id="LBj-ab-RcJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SmM-Sq-ck9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3232" y="-228"/>
+            <point key="canvasLocation" x="3231.884057971015" y="-228.34821428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C0l-VC-AHT">
@@ -247,7 +264,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="layer" width="1048" height="838"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

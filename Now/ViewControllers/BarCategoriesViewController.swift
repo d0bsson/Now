@@ -8,7 +8,7 @@
 import UIKit
 
 class BarCategoriesViewController: UICollectionViewController {
-
+    
     var bars: [Bar] = []
     
     private let time = String(Int(Date().timeIntervalSince1970))
@@ -63,19 +63,18 @@ class BarCategoriesViewController: UICollectionViewController {
     }
     
     private func tranferItem(time: String, item: String) {
-        let vc = FinalEventBarViewController()
-        vc.fetchData(time: time, item: item)
-        vc.item = item
-    }
-    
-    private func fetchData() {
-        Network.shared.fetchBarCategories(from: urlBar) { [weak self] bar in
-            self?.bars = bar
-            self?.collectionView.reloadData()
+        
+        if let barVC = storyboard?.instantiateViewController(withIdentifier: "bar") as? FinalEventBarViewController {
+            barVC.time = time
+            barVC.item = item
+            self.navigationController?.pushViewController(barVC, animated: true)
         }
     }
     
-    
+    func fetchData() {
+        Network.shared.fetchBarCategories(from: urlBar) { bar in
+            self.bars = bar
+            self.collectionView.reloadData()
+        }
+    }
 }
-
-

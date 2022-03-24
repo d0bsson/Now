@@ -95,8 +95,8 @@
 			children = (
 				D744A66727B4512100A934D6 /* BarAndCultureViewController.swift */,
 				D744A67D27B6E40900A934D6 /* BarCategoriesViewController.swift */,
-				D744A67F27B6E58100A934D6 /* CultureCategoriesViewController.swift */,
 				D744A69227B985EE00A934D6 /* FinalEventBarViewController.swift */,
+				D744A67F27B6E58100A934D6 /* CultureCategoriesViewController.swift */,
 				D744A69427BD84A300A934D6 /* FinalEventCultureViewController.swift */,
 			);
 			path = ViewControllers;
