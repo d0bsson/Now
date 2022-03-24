@@ -324,6 +324,9 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="LbA-xM-LQI">
+            <size key="intrinsicContentSize" width="228" height="43"/>
+        </designable>
         <designable name="trk-kK-8Ke">
             <size key="intrinsicContentSize" width="200" height="43"/>
         </designable>
