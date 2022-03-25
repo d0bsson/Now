@@ -181,6 +181,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="u5m-UL-WJf"/>
+                    <connections>
+                        <outlet property="collectionViewCulture" destination="PvV-0G-PJi" id="xw6-6a-Sw2"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z55-HT-Fli" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -193,10 +196,25 @@
                     <view key="view" contentMode="scaleToFill" id="ye2-cp-5GC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHJ-te-LsG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VYR-Oc-0ng"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XHJ-te-LsG" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" id="OAD-Qm-5Yv"/>
+                            <constraint firstItem="XHJ-te-LsG" firstAttribute="trailing" secondItem="VYR-Oc-0ng" secondAttribute="trailing" id="TRM-39-H3L"/>
+                            <constraint firstAttribute="bottom" secondItem="XHJ-te-LsG" secondAttribute="bottom" id="nT7-ZE-TwT"/>
+                            <constraint firstItem="XHJ-te-LsG" firstAttribute="top" secondItem="ye2-cp-5GC" secondAttribute="top" id="yoi-sm-Yvb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QWY-lP-v5K"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="XHJ-te-LsG" id="4GZ-NJ-dS9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1PY-wN-ruY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

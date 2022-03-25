@@ -19,10 +19,9 @@ class BarCategoriesViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
+        
         collectionViewBar.backgroundColor = .clear
-        
         view.addVerticalGradientLayer(topColor:Constans.backgroundTop, bottomColor: Constans.backgroundBot)
-        
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -31,9 +30,12 @@ class BarCategoriesViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "barCell", for: indexPath) as! BarCell
+        
         cell.barCellLabel.text = bars[indexPath.item].name
         cell.barCellLabel.font = .boldSystemFont(ofSize: 18)
-        cell.contentView.addVerticalGradientLayer(topColor: Constans.buttonBarTop, bottomColor: Constans.buttonBarBot)
+        
+        cell.contentView.addVerticalGradientLayer(topColor: Constans.buttonBarTop,
+                                                  bottomColor: Constans.buttonBarBot)
         return cell
     }
     

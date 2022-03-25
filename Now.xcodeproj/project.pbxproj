@@ -144,9 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				D744A68F27B97E4300A934D6 /* Event.swift */,
+				D724D73B27CA9DD90026FF22 /* Place.swift */,
 				D744A69827C1417C00A934D6 /* Bar.swift */,
 				D744A69A27C1505800A934D6 /* Culture.swift */,
-				D724D73B27CA9DD90026FF22 /* Place.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

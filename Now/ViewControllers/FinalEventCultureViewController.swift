@@ -8,10 +8,17 @@
 import UIKit
 
 class FinalEventCultureViewController: UIViewController {
+    
+    @IBOutlet weak var backgroundView: UIView!
+    
+    var time = ""
     var item = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Constans.getGradient(with: self.view, to: backgroundView)
+        
+        fetchData(time: time, item: item)
     }
     
     func fetchData(time: String, item: String) {
