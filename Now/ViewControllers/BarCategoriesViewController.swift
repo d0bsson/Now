@@ -9,6 +9,8 @@ import UIKit
 
 class BarCategoriesViewController: UICollectionViewController {
     
+    @IBOutlet var collectionViewBar: UICollectionView!
+    
     var bars: [Bar] = []
     
     private let time = String(Int(Date().timeIntervalSince1970))
@@ -17,7 +19,11 @@ class BarCategoriesViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
-//        getGradient()
+//      getGradient()
+        collectionViewBar.backgroundColor = .clear
+        
+        view.addVerticalGradientLayer(topColor:#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1), bottomColor: #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1))
+        
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -27,6 +33,9 @@ class BarCategoriesViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "barCell", for: indexPath) as! BarCell
         cell.barCellLabel.text = bars[indexPath.item].name
+//        cell.barCellLabel.backgroundColor = .systemBlue
+//        cell.contentView.backgroundColor = UIColor(red: 102/256, green: 255/256, blue: 255/256, alpha: 0.66)
+        cell.contentView.addVerticalGradientLayer(topColor: Constans.buttonTop, bottomColor: Constans.buttonBot)
         return cell
     }
     
@@ -36,6 +45,8 @@ class BarCategoriesViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = bars[indexPath.item].slug ?? "unowed"
+//        let selectedCell:UICollectionViewCell = collectionView.cellForItemAtIndexPath(indexPath)!
+//               selectedCell.contentView.backgroundColor = UIColor(red: 102/256, green: 255/256, blue: 255/256, alpha: 0.66)
         
         switch item {
         case "business-events": tranferItem(time: time, item: item)
@@ -76,18 +87,6 @@ class BarCategoriesViewController: UICollectionViewController {
             self.bars = bar
             self.collectionView.reloadData()
         }
-    }
-    
-    private func getGradient() {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = view.bounds
-        
-        gradientLayer.colors = [#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1).cgColor, #colorLiteral(red: 0.9882352941, green: 0.9333333333, blue: 0.1294117647, alpha: 1).cgColor]
-        gradientLayer.shouldRasterize = true
-        gradientLayer.startPoint = CGPoint(x: 0, y: 0) // Top left corner.
-        gradientLayer.endPoint = CGPoint(x: 1, y: 1) // Bottom right corner.
-        
-        view.layer.addSublayer(gradientLayer)
     }
 }
 

@@ -10,6 +10,7 @@ import UIKit
 class BarCell: UICollectionViewCell {
     @IBOutlet weak var barCellLabel: UILabel!
     
+    
 }
 
 

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Выбирай-->
+        <!--Bar And Culture View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="BarAndCultureViewController" customModule="Now" customModuleProvider="target" sceneMemberID="viewController">
@@ -120,7 +120,7 @@
                             <constraint firstItem="5s7-Kt-Rgd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nsi-EG-4z2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Выбирай" id="4hL-pl-7tQ"/>
+                    <navigationItem key="navigationItem" id="4hL-pl-7tQ"/>
                     <connections>
                         <outlet property="gradientLayerView" destination="5s7-Kt-Rgd" id="fGz-Qv-ibA"/>
                     </connections>
@@ -206,7 +206,7 @@
         <scene sceneID="ktU-40-jJS">
             <objects>
                 <collectionViewController id="w5h-AL-o69" customClass="BarCategoriesViewController" customModule="Now" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fOt-5Y-KS6" customClass="Gradient" customModule="Now" customModuleProvider="target">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fOt-5Y-KS6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -244,6 +244,24 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="10" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="barCellLabel" destination="V8g-bM-EUA" id="dR2-E9-yoc"/>
@@ -251,11 +269,8 @@
                             </collectionViewCell>
                         </cells>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="topGradientColor">
-                                <color key="value" red="0.82352941180000006" green="0.98039215690000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="bottomGradientColor">
-                                <color key="value" red="0.82352941180000006" green="0.70588235290000001" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                         <connections>
@@ -264,6 +279,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="DMj-yq-rfm"/>
+                    <connections>
+                        <outlet property="collectionViewBar" destination="fOt-5Y-KS6" id="779-7e-z4D"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HMN-rZ-DK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

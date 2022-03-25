@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D71104F027ECD51A00308E77 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71104EF27ECD51A00308E77 /* ExtensionUIView.swift */; };
 		D71104F227ECD69400308E77 /* ExtantionGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71104F127ECD69400308E77 /* ExtantionGradientView.swift */; };
+		D711050227EE1B9400308E77 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D711050127EE1B9400308E77 /* Constants.swift */; };
 		D724D73C27CA9DD90026FF22 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = D724D73B27CA9DD90026FF22 /* Place.swift */; };
 		D744A66427B4512100A934D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A66327B4512100A934D6 /* AppDelegate.swift */; };
 		D744A66627B4512100A934D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A66527B4512100A934D6 /* SceneDelegate.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		D71104EF27ECD51A00308E77 /* ExtensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
 		D71104F127ECD69400308E77 /* ExtantionGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtantionGradientView.swift; sourceTree = "<group>"; };
+		D711050127EE1B9400308E77 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D724D73B27CA9DD90026FF22 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		D744A66027B4512100A934D6 /* Now.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Now.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D744A66327B4512100A934D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				D744A66527B4512100A934D6 /* SceneDelegate.swift */,
 				D71104EF27ECD51A00308E77 /* ExtensionUIView.swift */,
 				D71104F127ECD69400308E77 /* ExtantionGradientView.swift */,
+				D711050127EE1B9400308E77 /* Constants.swift */,
 			);
 			path = Supports;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D744A68B27B9457100A934D6 /* NetworkManager.swift in Sources */,
+				D711050227EE1B9400308E77 /* Constants.swift in Sources */,
 				D744A69D27C1510D00A934D6 /* BarCell.swift in Sources */,
 				D744A69927C1417C00A934D6 /* Bar.swift in Sources */,
 				D744A66827B4512100A934D6 /* BarAndCultureViewController.swift in Sources */,
