@@ -13,24 +13,11 @@ class BarAndCultureViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getGradient()
+        Constans.getGradient(with: self.view, to: gradientLayerView)
         
         var shouldAutorotate: Bool {
                 return false
             }
-    }
-
-        
-    private func getGradient() {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = view.bounds
-        
-        gradientLayer.colors = [Constans.backgroundTop.cgColor,Constans.backgroundBot.cgColor]
-        gradientLayer.shouldRasterize = true
-        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
-        gradientLayer.endPoint = CGPoint(x: 1, y: 1) 
-        
-        gradientLayerView.layer.addSublayer(gradientLayer)
     }
 }
 

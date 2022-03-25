@@ -8,8 +8,14 @@
 import UIKit
 
 class FinalEventBarViewController: UIViewController {
+    
     @IBOutlet weak var eventImage: UIImageView!
+    
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var nameEventLabel: UILabel!
+    @IBOutlet weak var descriptionEventLabel: UILabel!
+    
+    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var time = ""
@@ -17,6 +23,7 @@ class FinalEventBarViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        Constans.getGradient(with: self.view, to: backgroundView)
         fetchData(time: time, item: item)
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
@@ -33,13 +40,23 @@ class FinalEventBarViewController: UIViewController {
             guard let randomImage = images.randomElement() else { return }
             guard let urlImage = randomImage.image else { return }
             guard let imageData = ImageManager.shared.fetchImage(from: urlImage) else { return }
+            
 // MARK: - Get date of event
 //            guard let date = randomEvent.dates else { return }
 //            guard let endDate = date.end else { return }
+            
+// MARK: - Get name event
+            guard let nameEvent = randomEvent.title else { return }
+            self.nameEventLabel.text = nameEvent
+            
+// MARK: - Get description event
+            guard let descriptionEvent = randomEvent.description else { return }
+            let decoderString = String(htmlEncodedString: descriptionEvent)
+            self.descriptionEventLabel.text = decoderString
+            
             DispatchQueue.main.async {
                 self.eventImage.image = UIImage(data: imageData)
                 self.activityIndicator.stopAnimating()
-
             }
         }
     }

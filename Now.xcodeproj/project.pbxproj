@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D70CDDA927EE4A300097A73E /* ExtentionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70CDDA827EE4A300097A73E /* ExtentionString.swift */; };
 		D71104F027ECD51A00308E77 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71104EF27ECD51A00308E77 /* ExtensionUIView.swift */; };
 		D71104F227ECD69400308E77 /* ExtantionGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71104F127ECD69400308E77 /* ExtantionGradientView.swift */; };
 		D711050227EE1B9400308E77 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D711050127EE1B9400308E77 /* Constants.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D70CDDA827EE4A300097A73E /* ExtentionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionString.swift; sourceTree = "<group>"; };
 		D71104EF27ECD51A00308E77 /* ExtensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
 		D71104F127ECD69400308E77 /* ExtantionGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtantionGradientView.swift; sourceTree = "<group>"; };
 		D711050127EE1B9400308E77 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				D71104EF27ECD51A00308E77 /* ExtensionUIView.swift */,
 				D71104F127ECD69400308E77 /* ExtantionGradientView.swift */,
 				D711050127EE1B9400308E77 /* Constants.swift */,
+				D70CDDA827EE4A300097A73E /* ExtentionString.swift */,
 			);
 			path = Supports;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D744A68B27B9457100A934D6 /* NetworkManager.swift in Sources */,
+				D70CDDA927EE4A300097A73E /* ExtentionString.swift in Sources */,
 				D711050227EE1B9400308E77 /* Constants.swift in Sources */,
 				D744A69D27C1510D00A934D6 /* BarCell.swift in Sources */,
 				D744A69927C1417C00A934D6 /* Bar.swift in Sources */,

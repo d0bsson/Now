@@ -13,4 +13,16 @@ struct Constans {
     
     static let backgroundTop = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
     static let backgroundBot = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+    
+    static func getGradient(with view: UIView, to outletView: UIView) {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = view.bounds
+        
+        gradientLayer.colors = [Constans.backgroundTop.cgColor,Constans.backgroundBot.cgColor]
+        gradientLayer.shouldRasterize = true
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 1)
+        
+        outletView.layer.addSublayer(gradientLayer)
+    }
 }

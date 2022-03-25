@@ -20,7 +20,7 @@ final class Network {
                 return
             }
             
-            guard let data = data else { return }
+            guard let data = data?.parseData(removeString: "null, ") else { return }
             
             do {
                 let result = try JSONDecoder().decode(Event.self, from: data)
@@ -108,6 +108,15 @@ final class ImageManager {
     }
     
     init() {}
+}
+
+extension Data {
+    func parseData(removeString string: String) -> Data? {
+        let dataAsString = String(data: self, encoding: .utf8)
+        let parsedDataString = dataAsString?.replacingOccurrences(of: string, with: "")
+        guard let data = parsedDataString?.data(using: .utf8) else { return nil}
+        return data
+    }
 }
 
 
