@@ -10,21 +10,22 @@ import UIKit
 class FinalEventBarViewController: UIViewController {
     @IBOutlet weak var eventImage: UIImageView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var time = ""
     var item = ""
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(time)
         fetchData(time: time, item: item)
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
     }
     
     func fetchData(time: String, item: String) {
         let url = "https://kudago.com/public-api/v1.4/events/?lang=ru&fields=dates,title,short_title,slug,place,description,body_text,price,images,site_url&categories=\(item)&expand=images&location=msk&actual_since=\(time)"
 
         Network.shared.fetchEventData(from: url) { result in
-
             guard let randomEvent = result.results?.randomElement() else { return }
             
 // MARK: - Get random image from Event
@@ -37,6 +38,8 @@ class FinalEventBarViewController: UIViewController {
 //            guard let endDate = date.end else { return }
             DispatchQueue.main.async {
                 self.eventImage.image = UIImage(data: imageData)
+                self.activityIndicator.stopAnimating()
+
             }
         }
     }

@@ -33,8 +33,7 @@ class BarCategoriesViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "barCell", for: indexPath) as! BarCell
         cell.barCellLabel.text = bars[indexPath.item].name
-//        cell.barCellLabel.backgroundColor = .systemBlue
-//        cell.contentView.backgroundColor = UIColor(red: 102/256, green: 255/256, blue: 255/256, alpha: 0.66)
+        cell.barCellLabel.font = .boldSystemFont(ofSize: 18)
         cell.contentView.addVerticalGradientLayer(topColor: Constans.buttonTop, bottomColor: Constans.buttonBot)
         return cell
     }
