@@ -19,10 +19,9 @@ class BarCategoriesViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
-//      getGradient()
         collectionViewBar.backgroundColor = .clear
         
-        view.addVerticalGradientLayer(topColor:#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1), bottomColor: #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1))
+        view.addVerticalGradientLayer(topColor:Constans.backgroundTop, bottomColor: Constans.backgroundBot)
         
     }
     
@@ -44,8 +43,6 @@ class BarCategoriesViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = bars[indexPath.item].slug ?? "unowed"
-//        let selectedCell:UICollectionViewCell = collectionView.cellForItemAtIndexPath(indexPath)!
-//               selectedCell.contentView.backgroundColor = UIColor(red: 102/256, green: 255/256, blue: 255/256, alpha: 0.66)
         
         switch item {
         case "business-events": tranferItem(time: time, item: item)
