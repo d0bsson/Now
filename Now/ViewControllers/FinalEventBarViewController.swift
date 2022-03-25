@@ -24,9 +24,14 @@ class FinalEventBarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Constans.getGradient(with: self.view, to: backgroundView)
+        nameEventLabel.layer.cornerRadius = 15
+        
         fetchData(time: time, item: item)
+        
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
+        
+        
     }
     
     func fetchData(time: String, item: String) {
