@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class BarCategoriesViewController: UICollectionViewController {
     
@@ -86,6 +87,7 @@ class BarCategoriesViewController: UICollectionViewController {
             self.collectionView.reloadData()
         }
     }
+    
 }
 
 

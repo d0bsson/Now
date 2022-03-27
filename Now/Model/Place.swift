@@ -11,7 +11,7 @@ struct Place: Codable {
     let count: Int?
     let next: String?
     let previous: Int?
-    let results: [BarResult]?
+    let results: [PlaceResult]?
 }
 
 struct PlaceResult: Codable {

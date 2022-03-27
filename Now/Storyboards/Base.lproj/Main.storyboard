@@ -317,7 +317,29 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T87-NX-bfL">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF6-x1-mFN" customClass="GradientButton" customModule="Now" customModuleProvider="target">
+                                        <rect key="frame" x="315" y="362" width="79" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="topGradientColor">
+                                                <color key="value" red="0.67450980390000004" green="0.89019607840000003" blue="0.94333755969999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomGradientColor">
+                                                <color key="value" red="0.96862745100000003" green="0.9785069273" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xF6-x1-mFN" secondAttribute="trailing" constant="20" id="3df-kT-AJ7"/>
+                                    <constraint firstItem="xF6-x1-mFN" firstAttribute="leading" secondItem="T87-NX-bfL" secondAttribute="leading" constant="315" id="f5L-7t-RNx"/>
+                                </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MOG-kK-70K">
                                 <rect key="frame" x="20" y="56" width="374" height="256"/>
@@ -383,6 +405,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWI-d8-zA2">
+                                <rect key="frame" x="20" y="401" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bor-Wl-1t1">
                                 <rect key="frame" x="197" y="174" width="20" height="20"/>
                             </activityIndicatorView>
@@ -395,6 +423,7 @@
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="kMO-4m-zRt" secondAttribute="trailing" constant="20" id="6yc-NI-4ea"/>
                             <constraint firstItem="NkZ-MZ-N0y" firstAttribute="top" secondItem="Mqu-5h-HXf" secondAttribute="top" constant="-20" id="74F-E4-qV6"/>
                             <constraint firstItem="T87-NX-bfL" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" id="7LF-l7-Vy6"/>
+                            <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="KWI-d8-zA2" secondAttribute="trailing" constant="40" id="7Vo-cg-ghC"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="MOG-kK-70K" secondAttribute="trailing" constant="20" id="81m-5L-sIA"/>
                             <constraint firstItem="kMO-4m-zRt" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="9hH-hg-RPC"/>
                             <constraint firstItem="bLC-Ro-0XH" firstAttribute="top" secondItem="Mqu-5h-HXf" secondAttribute="top" id="I5L-kG-Vp9"/>
@@ -402,8 +431,11 @@
                             <constraint firstItem="T87-NX-bfL" firstAttribute="trailing" secondItem="Mqu-5h-HXf" secondAttribute="trailing" id="O7O-zX-23F"/>
                             <constraint firstItem="bor-Wl-1t1" firstAttribute="centerX" secondItem="MOG-kK-70K" secondAttribute="centerX" id="P1A-Dq-E4q"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="NkZ-MZ-N0y" secondAttribute="trailing" constant="20" id="RFZ-5N-7Rt"/>
+                            <constraint firstItem="KWI-d8-zA2" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="Tpe-tb-XH6"/>
                             <constraint firstItem="T87-NX-bfL" firstAttribute="top" secondItem="Z3b-SR-ZhC" secondAttribute="top" id="ilb-NW-eWr"/>
+                            <constraint firstItem="KWI-d8-zA2" firstAttribute="top" secondItem="xF6-x1-mFN" secondAttribute="bottom" constant="8" id="jGe-08-t7Z"/>
                             <constraint firstItem="NkZ-MZ-N0y" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="jVt-dA-HdZ"/>
+                            <constraint firstItem="xF6-x1-mFN" firstAttribute="top" secondItem="kMO-4m-zRt" secondAttribute="bottom" constant="20" id="kAh-p7-j6H"/>
                             <constraint firstAttribute="bottom" secondItem="T87-NX-bfL" secondAttribute="bottom" id="mYm-Mz-dc0"/>
                             <constraint firstItem="MOG-kK-70K" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="nQE-Yj-8LS"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="bottom" secondItem="bLC-Ro-0XH" secondAttribute="bottom" constant="701" id="p7r-6S-jK4"/>
@@ -414,11 +446,13 @@
                     <navigationItem key="navigationItem" id="thU-v9-0bK"/>
                     <connections>
                         <outlet property="activityIndicator" destination="bor-Wl-1t1" id="lGN-bt-Zq2"/>
+                        <outlet property="addressLabel" destination="KWI-d8-zA2" id="eWJ-G7-iGf"/>
                         <outlet property="backgroundView" destination="T87-NX-bfL" id="ZMy-n7-rwn"/>
                         <outlet property="descriptionEventLabel" destination="kMO-4m-zRt" id="j9c-7Z-w87"/>
                         <outlet property="eventImage" destination="MOG-kK-70K" id="CeO-ai-r4g"/>
                         <outlet property="label" destination="bLC-Ro-0XH" id="LBj-ab-RcJ"/>
                         <outlet property="nameEventLabel" destination="NkZ-MZ-N0y" id="bFF-vd-Bjg"/>
+                        <outlet property="sourceButton" destination="xF6-x1-mFN" id="BlU-EY-CoU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SmM-Sq-ck9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

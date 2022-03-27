@@ -45,6 +45,24 @@ struct Dates: Codable {
 
 struct BarPlace: Codable {
     let id: Int?
+    let title, slug, address, phone: String
+        let subway: String
+        let siteURL: String
+        let isClosed: Bool
+        let coords: Coords
+        let isStub: Bool
+
+        enum CodingKeys: String, CodingKey {
+            case id, title, slug, address, phone, subway
+            case siteURL = "site_url"
+            case isClosed = "is_closed"
+            case coords
+            case isStub = "is_stub"
+        }
+}
+
+struct Coords: Codable {
+    let lat, lon: Double
 }
 
 
