@@ -363,6 +363,23 @@
                                     <action selector="sourceButtonPressed" destination="6H6-NT-BtO" eventType="touchUpInside" id="Beo-Jd-iah"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Td-eC-dSd">
+                                <rect key="frame" x="20" y="408" width="22" height="22"/>
+                                <color key="backgroundColor" red="0.8078432083" green="0.8078432083" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="8Vz-Pm-1w3"/>
+                                    <constraint firstAttribute="width" constant="22" id="zAY-Sl-Abf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="rublesign.circle" catalog="system">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ta-YG-ckn">
                                 <rect key="frame" x="185.5" y="723" width="43.5" height="40"/>
                                 <color key="backgroundColor" red="0.8078432083" green="0.8078432083" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -385,11 +402,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9y-JO-c1T">
-                                <rect key="frame" x="20" y="416" width="374" height="30"/>
+                                <rect key="frame" x="50" y="408" width="344" height="22"/>
                                 <color key="backgroundColor" red="0.8078432083" green="0.8078432083" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="EQT-iP-12R"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -403,7 +417,7 @@
                                 <rect key="frame" x="20" y="348" width="374" height="22"/>
                                 <color key="backgroundColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="ZYT-KG-lHz"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="nH1-OM-JJC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -438,11 +452,8 @@
                                 <rect key="frame" x="197" y="202" width="20" height="20"/>
                             </activityIndicatorView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGV-vM-TG1">
-                                <rect key="frame" x="20" y="378" width="374" height="30"/>
+                                <rect key="frame" x="50" y="378" width="344" height="22"/>
                                 <color key="backgroundColor" red="0.80563631979999994" green="0.73583800479999995" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="frp-b1-pLE"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -452,35 +463,62 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ei-x4-BDi">
+                                <rect key="frame" x="20" y="378" width="22" height="22"/>
+                                <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="mhD-xX-yIt"/>
+                                    <constraint firstAttribute="width" constant="22" id="w0L-fU-lQ2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="mappin.and.ellipse" catalog="system">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mqu-5h-HXf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="xF6-x1-mFN" secondAttribute="trailing" constant="20" id="2dN-hT-vuI"/>
+                            <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="kMO-4m-zRt" secondAttribute="trailing" constant="20" id="2mk-vy-QDe"/>
                             <constraint firstItem="bor-Wl-1t1" firstAttribute="centerY" secondItem="MOG-kK-70K" secondAttribute="centerY" id="4Ts-mW-W7T"/>
-                            <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="kMO-4m-zRt" secondAttribute="trailing" constant="20" id="6yc-NI-4ea"/>
                             <constraint firstItem="NkZ-MZ-N0y" firstAttribute="top" secondItem="Mqu-5h-HXf" secondAttribute="top" constant="8" id="74F-E4-qV6"/>
                             <constraint firstItem="T87-NX-bfL" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" id="7LF-l7-Vy6"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="MOG-kK-70K" secondAttribute="trailing" constant="20" id="81m-5L-sIA"/>
                             <constraint firstItem="A9y-JO-c1T" firstAttribute="top" secondItem="HGV-vM-TG1" secondAttribute="bottom" constant="8" id="8B8-Nn-b8o"/>
-                            <constraint firstItem="kMO-4m-zRt" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="9hH-hg-RPC"/>
-                            <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="A9y-JO-c1T" secondAttribute="trailing" constant="20" id="Kdh-S8-SZI"/>
+                            <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="HGV-vM-TG1" secondAttribute="trailing" constant="20" id="8rJ-FF-PIw"/>
+                            <constraint firstItem="5Td-eC-dSd" firstAttribute="top" secondItem="1Ei-x4-BDi" secondAttribute="bottom" constant="8" id="Ac6-UA-cOA"/>
+                            <constraint firstItem="HGV-vM-TG1" firstAttribute="leading" secondItem="1Ei-x4-BDi" secondAttribute="trailing" constant="8" id="C0T-wM-aGT"/>
+                            <constraint firstItem="1Ei-x4-BDi" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="DQR-R0-Jsu"/>
                             <constraint firstItem="T87-NX-bfL" firstAttribute="trailing" secondItem="Mqu-5h-HXf" secondAttribute="trailing" id="O7O-zX-23F"/>
-                            <constraint firstItem="A9y-JO-c1T" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="OKv-6s-HrW"/>
                             <constraint firstItem="bor-Wl-1t1" firstAttribute="centerX" secondItem="MOG-kK-70K" secondAttribute="centerX" id="P1A-Dq-E4q"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="bottom" secondItem="xF6-x1-mFN" secondAttribute="bottom" constant="20" id="QZ5-xD-41j"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="NkZ-MZ-N0y" secondAttribute="trailing" constant="20" id="RFZ-5N-7Rt"/>
+                            <constraint firstItem="A9y-JO-c1T" firstAttribute="leading" secondItem="5Td-eC-dSd" secondAttribute="trailing" constant="8" id="RTS-dO-K9E"/>
                             <constraint firstItem="HGV-vM-TG1" firstAttribute="top" secondItem="kMO-4m-zRt" secondAttribute="bottom" constant="8" id="WYG-hH-UD9"/>
-                            <constraint firstItem="HGV-vM-TG1" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="XgE-Kg-EvO"/>
+                            <constraint firstItem="5Td-eC-dSd" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="Wji-mK-YUn"/>
                             <constraint firstItem="1Ta-YG-ckn" firstAttribute="centerX" secondItem="Z3b-SR-ZhC" secondAttribute="centerX" id="Y1T-NJ-DMC"/>
                             <constraint firstItem="xF6-x1-mFN" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="cm3-Wh-f7j"/>
+                            <constraint firstItem="kMO-4m-zRt" firstAttribute="top" secondItem="MOG-kK-70K" secondAttribute="bottom" constant="8" symbolic="YES" id="gdO-9X-gCm"/>
                             <constraint firstItem="T87-NX-bfL" firstAttribute="top" secondItem="Z3b-SR-ZhC" secondAttribute="top" id="ilb-NW-eWr"/>
                             <constraint firstItem="NkZ-MZ-N0y" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="jVt-dA-HdZ"/>
                             <constraint firstAttribute="bottom" secondItem="T87-NX-bfL" secondAttribute="bottom" id="mYm-Mz-dc0"/>
                             <constraint firstItem="MOG-kK-70K" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="nQE-Yj-8LS"/>
-                            <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="HGV-vM-TG1" secondAttribute="trailing" constant="20" id="pFe-5T-ib7"/>
+                            <constraint firstItem="kMO-4m-zRt" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="p8f-em-pJh"/>
+                            <constraint firstItem="1Ei-x4-BDi" firstAttribute="top" secondItem="kMO-4m-zRt" secondAttribute="bottom" constant="8" id="rts-xW-nVA"/>
+                            <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="A9y-JO-c1T" secondAttribute="trailing" constant="20" id="t90-6d-Eel"/>
                             <constraint firstItem="MOG-kK-70K" firstAttribute="top" secondItem="NkZ-MZ-N0y" secondAttribute="bottom" constant="8" id="v1M-ch-sOe"/>
-                            <constraint firstItem="kMO-4m-zRt" firstAttribute="top" secondItem="MOG-kK-70K" secondAttribute="bottom" constant="8" id="vUK-9b-ByV"/>
                             <constraint firstItem="xF6-x1-mFN" firstAttribute="top" secondItem="1Ta-YG-ckn" secondAttribute="bottom" constant="36" id="xpC-ct-w8a"/>
                         </constraints>
                     </view>
@@ -525,12 +563,11 @@
         <designable name="trk-kK-8Ke">
             <size key="intrinsicContentSize" width="200" height="43"/>
         </designable>
-        <designable name="xF6-x1-mFN">
-            <size key="intrinsicContentSize" width="171" height="43"/>
-        </designable>
     </designables>
     <resources>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+        <image name="rublesign.circle" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
