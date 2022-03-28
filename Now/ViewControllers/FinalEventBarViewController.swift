@@ -27,6 +27,7 @@ class FinalEventBarViewController: UIViewController {
         
     override func viewDidLoad() {
         descriptionEventLabel.adjustsFontSizeToFitWidth = true
+        
         descriptionEventLabel.minimumScaleFactor = 0.0001
         super.viewDidLoad()
         Constans.getGradient(with: self.view, to: backgroundView)
@@ -90,7 +91,7 @@ class FinalEventBarViewController: UIViewController {
         if randomEvent.price != "" {
             self.priceLabel.text = randomEvent.price
         } else {
-            self.priceLabel.text = "Уточните стоимость по кнопке ниже"
+            self.priceLabel.text = "Бесплатно!"
         }
     }
 }
