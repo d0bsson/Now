@@ -26,7 +26,7 @@ class FinalEventCultureViewController: UIViewController {
         
         Network.shared.fetchPlaceData(from: url) { result in
             print(result.results?.randomElement() ?? "")
-            guard let qqq = result.results?.randomElement() else { return }
+//            guard let qqq = result.results?.randomElement() else { return }
             
         }
     }

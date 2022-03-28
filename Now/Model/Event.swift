@@ -17,13 +17,14 @@ struct Event: Codable {
 struct BarResult: Codable {
     let dates: [Dates]?
     let title: String?
+    let shortTitle: String?
     let slug: String?
     let place: BarPlace?
     let description: String?
     let bodyText: String?
     let price: String?
     var images: [Image]?
-    let siteURL: String?
+    var siteURL: String?
     
     enum CodingKeys: String, CodingKey {
             case dates, title, slug, place
@@ -31,6 +32,7 @@ struct BarResult: Codable {
             case bodyText = "body_text"
             case price, images
             case siteURL = "site_url"
+            case shortTitle = "short_title"
         }
 }
 
