@@ -13,7 +13,6 @@ class FinalEventBarViewController: UIViewController {
     
     @IBOutlet weak var eventImage: UIImageView!
     
-    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var nameEventLabel: UILabel!
     @IBOutlet weak var descriptionEventLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
@@ -27,6 +26,8 @@ class FinalEventBarViewController: UIViewController {
     var item = ""
         
     override func viewDidLoad() {
+        descriptionEventLabel.adjustsFontSizeToFitWidth = true
+        descriptionEventLabel.minimumScaleFactor = 0.0001
         super.viewDidLoad()
         Constans.getGradient(with: self.view, to: backgroundView)
         
@@ -75,10 +76,12 @@ class FinalEventBarViewController: UIViewController {
             }
         }
     }
-
+    @IBAction func refreshButtonPressed() {
+        fetchData(time: time, item: item)
+    }
+    
     @IBAction func sourceButtonPressed() {
         guard let url = URL(string: randomEvent?.siteURL ?? "") else { return }
-        print("123")
         let source = SFSafariViewController(url: url)
         present(source, animated: true)
     }
