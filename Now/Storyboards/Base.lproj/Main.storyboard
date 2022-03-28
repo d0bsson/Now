@@ -333,7 +333,7 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="value" red="0.8078432083" green="0.8078432083" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                         <real key="value" value="0.0"/>
@@ -363,6 +363,37 @@
                                     <action selector="sourceButtonPressed" destination="6H6-NT-BtO" eventType="touchUpInside" id="Beo-Jd-iah"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c54-gb-8vO">
+                                <rect key="frame" x="20" y="437" width="22" height="22"/>
+                                <color key="backgroundColor" red="0.8078432083" green="0.8078432083" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="ZVQ-yF-P01"/>
+                                    <constraint firstAttribute="width" constant="22" id="asm-8y-4X1"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="mb4-hR-on2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="22" id="sqp-vx-RfT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="calendar" catalog="system">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2My-da-mZV">
+                                <rect key="frame" x="50" y="437" width="344" height="22"/>
+                                <color key="backgroundColor" red="0.8078432083" green="0.8078432083" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Td-eC-dSd">
                                 <rect key="frame" x="20" y="408" width="22" height="22"/>
                                 <color key="backgroundColor" red="0.8078432083" green="0.8078432083" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -371,12 +402,12 @@
                                     <constraint firstAttribute="width" constant="22" id="zAY-Sl-Abf"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="rublesign.circle" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="rublesign.square" catalog="system">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
@@ -471,18 +502,15 @@
                                     <constraint firstAttribute="width" constant="22" id="w0L-fU-lQ2"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="mappin.and.ellipse" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="location.square" catalog="system">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
@@ -492,13 +520,13 @@
                         <constraints>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="xF6-x1-mFN" secondAttribute="trailing" constant="20" id="2dN-hT-vuI"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="kMO-4m-zRt" secondAttribute="trailing" constant="20" id="2mk-vy-QDe"/>
+                            <constraint firstItem="2My-da-mZV" firstAttribute="leading" secondItem="c54-gb-8vO" secondAttribute="trailing" constant="8" id="3es-Ge-HPf"/>
                             <constraint firstItem="bor-Wl-1t1" firstAttribute="centerY" secondItem="MOG-kK-70K" secondAttribute="centerY" id="4Ts-mW-W7T"/>
                             <constraint firstItem="NkZ-MZ-N0y" firstAttribute="top" secondItem="Mqu-5h-HXf" secondAttribute="top" constant="8" id="74F-E4-qV6"/>
                             <constraint firstItem="T87-NX-bfL" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" id="7LF-l7-Vy6"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="MOG-kK-70K" secondAttribute="trailing" constant="20" id="81m-5L-sIA"/>
                             <constraint firstItem="A9y-JO-c1T" firstAttribute="top" secondItem="HGV-vM-TG1" secondAttribute="bottom" constant="8" id="8B8-Nn-b8o"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="HGV-vM-TG1" secondAttribute="trailing" constant="20" id="8rJ-FF-PIw"/>
-                            <constraint firstItem="5Td-eC-dSd" firstAttribute="top" secondItem="1Ei-x4-BDi" secondAttribute="bottom" constant="8" id="Ac6-UA-cOA"/>
                             <constraint firstItem="HGV-vM-TG1" firstAttribute="leading" secondItem="1Ei-x4-BDi" secondAttribute="trailing" constant="8" id="C0T-wM-aGT"/>
                             <constraint firstItem="1Ei-x4-BDi" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="DQR-R0-Jsu"/>
                             <constraint firstItem="T87-NX-bfL" firstAttribute="trailing" secondItem="Mqu-5h-HXf" secondAttribute="trailing" id="O7O-zX-23F"/>
@@ -509,15 +537,20 @@
                             <constraint firstItem="HGV-vM-TG1" firstAttribute="top" secondItem="kMO-4m-zRt" secondAttribute="bottom" constant="8" id="WYG-hH-UD9"/>
                             <constraint firstItem="5Td-eC-dSd" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="Wji-mK-YUn"/>
                             <constraint firstItem="1Ta-YG-ckn" firstAttribute="centerX" secondItem="Z3b-SR-ZhC" secondAttribute="centerX" id="Y1T-NJ-DMC"/>
+                            <constraint firstItem="c54-gb-8vO" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="b9G-20-67N"/>
                             <constraint firstItem="xF6-x1-mFN" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="cm3-Wh-f7j"/>
                             <constraint firstItem="kMO-4m-zRt" firstAttribute="top" secondItem="MOG-kK-70K" secondAttribute="bottom" constant="8" symbolic="YES" id="gdO-9X-gCm"/>
                             <constraint firstItem="T87-NX-bfL" firstAttribute="top" secondItem="Z3b-SR-ZhC" secondAttribute="top" id="ilb-NW-eWr"/>
                             <constraint firstItem="NkZ-MZ-N0y" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="jVt-dA-HdZ"/>
+                            <constraint firstItem="5Td-eC-dSd" firstAttribute="top" secondItem="kMO-4m-zRt" secondAttribute="bottom" constant="38" id="lQ9-sT-QrY"/>
                             <constraint firstAttribute="bottom" secondItem="T87-NX-bfL" secondAttribute="bottom" id="mYm-Mz-dc0"/>
                             <constraint firstItem="MOG-kK-70K" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="nQE-Yj-8LS"/>
                             <constraint firstItem="kMO-4m-zRt" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="p8f-em-pJh"/>
+                            <constraint firstItem="c54-gb-8vO" firstAttribute="top" secondItem="kMO-4m-zRt" secondAttribute="bottom" constant="67" id="pm0-PT-JKo"/>
                             <constraint firstItem="1Ei-x4-BDi" firstAttribute="top" secondItem="kMO-4m-zRt" secondAttribute="bottom" constant="8" id="rts-xW-nVA"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="A9y-JO-c1T" secondAttribute="trailing" constant="20" id="t90-6d-Eel"/>
+                            <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="2My-da-mZV" secondAttribute="trailing" constant="20" id="ucH-a0-qi5"/>
+                            <constraint firstItem="2My-da-mZV" firstAttribute="top" secondItem="A9y-JO-c1T" secondAttribute="bottom" constant="7" id="uqW-oO-65K"/>
                             <constraint firstItem="MOG-kK-70K" firstAttribute="top" secondItem="NkZ-MZ-N0y" secondAttribute="bottom" constant="8" id="v1M-ch-sOe"/>
                             <constraint firstItem="xF6-x1-mFN" firstAttribute="top" secondItem="1Ta-YG-ckn" secondAttribute="bottom" constant="36" id="xpC-ct-w8a"/>
                         </constraints>
@@ -527,6 +560,7 @@
                         <outlet property="activityIndicator" destination="bor-Wl-1t1" id="lGN-bt-Zq2"/>
                         <outlet property="addressLabel" destination="HGV-vM-TG1" id="2Ql-S1-GNk"/>
                         <outlet property="backgroundView" destination="T87-NX-bfL" id="ZMy-n7-rwn"/>
+                        <outlet property="dateLabel" destination="2My-da-mZV" id="kHI-3l-e26"/>
                         <outlet property="descriptionEventLabel" destination="kMO-4m-zRt" id="j9c-7Z-w87"/>
                         <outlet property="eventImage" destination="MOG-kK-70K" id="CeO-ai-r4g"/>
                         <outlet property="nameEventLabel" destination="NkZ-MZ-N0y" id="bFF-vd-Bjg"/>
@@ -566,8 +600,9 @@
     </designables>
     <resources>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
-        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
-        <image name="rublesign.circle" catalog="system" width="128" height="121"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="location.square" catalog="system" width="128" height="114"/>
+        <image name="rublesign.square" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

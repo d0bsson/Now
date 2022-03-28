@@ -17,6 +17,7 @@ class FinalEventBarViewController: UIViewController {
     @IBOutlet weak var descriptionEventLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -52,8 +53,10 @@ class FinalEventBarViewController: UIViewController {
             guard let imageData = ImageManager.shared.fetchImage(from: urlImage) else { return }
                         
 // MARK: - Get date of event
-//            guard let date = randomEvent.dates else { return }
-//            guard let endDate = date.end else { return }
+            guard let date = randomEvent.dates else { return }
+            guard let endDate = date.first else { return }
+            guard let startDate = endDate.start else { return }
+            self.dateLabel.text = String(startDate)
             
 // MARK: - Get name event
             guard let nameEvent = randomEvent.title else { return }
