@@ -56,26 +56,26 @@ class FinalEventBarViewController: UIViewController {
             guard let date = randomEvent.dates else { return }
             guard let endDate = date.first else { return }
             guard let startDate = endDate.start else { return }
-            self.dateLabel.text = String(startDate)
             
 // MARK: - Get name event
             guard let nameEvent = randomEvent.title else { return }
-            self.nameEventLabel.text = nameEvent
             
 // MARK: - Get description event
             guard let descriptionEvent = randomEvent.description else { return }
             let decoderString = String(htmlEncodedString: descriptionEvent)
-            self.descriptionEventLabel.text = decoderString
             
 // MARK: - Get address event
             guard let place = randomEvent.place else { return }
-            self.addressLabel.text = place.address
             
 // MARK: - Get price event
             getPriceEvent(randomEvent: randomEvent)
             
             DispatchQueue.main.async {
                 self.eventImage.image = UIImage(data: imageData)
+                self.dateLabel.text = String(startDate)
+                self.nameEventLabel.text = nameEvent
+                self.descriptionEventLabel.text = decoderString
+                self.addressLabel.text = place.address
                 self.activityIndicator.stopAnimating()
             }
         }

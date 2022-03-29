@@ -20,104 +20,120 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5s7-Kt-Rgd">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbA-xM-LQI" customClass="GradientButton" customModule="Now" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="482" width="374" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="VKw-R1-8dw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="80"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Интересные места">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <color key="titleShadowColor" systemColor="systemYellowColor"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" title="Интересные места">
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomGradientColor">
+                                                <color key="value" red="0.82352941176470584" green="0.70588235294117641" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="topGradientColor">
+                                                <color key="value" red="0.96862745098039216" green="0.98039215686274506" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="TYK-lK-Y83" kind="show" id="abr-tt-dSM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trk-kK-8Ke" customClass="GradientButton" customModule="Now" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="314" width="374" height="120"/>
+                                        <color key="backgroundColor" red="0.94333755970001221" green="0.76906041316968565" blue="0.69622170953673745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="NEt-nP-vvA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="80"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="События сегодня">
+                                            <color key="titleColor" red="0.057753123342990875" green="0.030177805572748184" blue="0.11495278030633926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" title="События сегодня">
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                                            <color key="baseForegroundColor" red="0.057753123342990875" green="0.030177805572748184" blue="0.11495278030633926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="topGradientColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomGradientColor">
+                                                <color key="value" red="0.67450980392156867" green="0.66025611397577755" blue="0.94333755970001221" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="w5h-AL-o69" kind="show" id="0Cf-Vs-FuJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="LbA-xM-LQI" firstAttribute="leading" secondItem="5s7-Kt-Rgd" secondAttribute="leading" constant="20" id="8eZ-p0-LGU"/>
+                                    <constraint firstItem="LbA-xM-LQI" firstAttribute="centerY" secondItem="5s7-Kt-Rgd" secondAttribute="centerY" constant="94" id="NdO-wF-55f"/>
+                                    <constraint firstItem="LbA-xM-LQI" firstAttribute="centerX" secondItem="5s7-Kt-Rgd" secondAttribute="centerX" id="hZd-Ed-87I"/>
+                                    <constraint firstAttribute="trailing" secondItem="LbA-xM-LQI" secondAttribute="trailing" constant="20" id="kgm-QV-ygm"/>
+                                    <constraint firstItem="trk-kK-8Ke" firstAttribute="centerX" secondItem="5s7-Kt-Rgd" secondAttribute="centerX" id="oGe-Jl-RaD"/>
+                                    <constraint firstAttribute="trailing" secondItem="trk-kK-8Ke" secondAttribute="trailing" constant="20" id="sNz-tY-Ti7"/>
+                                    <constraint firstItem="trk-kK-8Ke" firstAttribute="centerY" secondItem="5s7-Kt-Rgd" secondAttribute="centerY" constant="-74" id="w9M-NE-cbf"/>
+                                    <constraint firstItem="trk-kK-8Ke" firstAttribute="leading" secondItem="5s7-Kt-Rgd" secondAttribute="leading" constant="20" id="xfy-DJ-acK"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trk-kK-8Ke" customClass="GradientButton" customModule="Now" customModuleProvider="target">
-                                <rect key="frame" x="20" y="253" width="374" height="160"/>
-                                <color key="backgroundColor" red="0.94333755970001221" green="0.76906041316968565" blue="0.69622170953673745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="hSJ-GC-k37"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="События сегодня">
-                                    <color key="titleColor" red="0.057753123342990875" green="0.030177805572748184" blue="0.11495278030633926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                        <size key="value" width="0.0" height="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="topGradientColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomGradientColor">
-                                        <color key="value" red="0.67450980392156867" green="0.66025611397577755" blue="0.94333755970001221" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="w5h-AL-o69" kind="show" id="0Cf-Vs-FuJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbA-xM-LQI" customClass="GradientButton" customModule="Now" customModuleProvider="target">
-                                <rect key="frame" x="20" y="530" width="374" height="160"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="KKW-4c-ite"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Интересные места">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                    <color key="titleShadowColor" systemColor="systemYellowColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                        <size key="value" width="0.0" height="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomGradientColor">
-                                        <color key="value" red="0.82352941176470584" green="0.70588235294117641" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="topGradientColor">
-                                        <color key="value" red="0.96862745098039216" green="0.98039215686274506" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="TYK-lK-Y83" kind="show" id="abr-tt-dSM"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.48114120648259306" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="LbA-xM-LQI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2TJ-g9-h9m"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LbA-xM-LQI" secondAttribute="trailing" constant="20" id="9em-1s-Pjw"/>
-                            <constraint firstItem="trk-kK-8Ke" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9js-b0-DN5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="trk-kK-8Ke" secondAttribute="trailing" constant="20" id="Cgl-yf-brt"/>
                             <constraint firstAttribute="bottom" secondItem="5s7-Kt-Rgd" secondAttribute="bottom" id="Q39-n7-mFS"/>
                             <constraint firstItem="5s7-Kt-Rgd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RhE-cI-eyA"/>
                             <constraint firstItem="5s7-Kt-Rgd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Toz-ey-LpW"/>
-                            <constraint firstItem="LbA-xM-LQI" firstAttribute="top" secondItem="trk-kK-8Ke" secondAttribute="bottom" constant="117" id="aSE-3k-hUf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LbA-xM-LQI" secondAttribute="bottom" constant="172" id="fhr-tb-Bow"/>
                             <constraint firstItem="5s7-Kt-Rgd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nsi-EG-4z2"/>
                         </constraints>
                     </view>
@@ -369,8 +385,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="ZVQ-yF-P01"/>
                                     <constraint firstAttribute="width" constant="22" id="asm-8y-4X1"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="mb4-hR-on2"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="22" id="sqp-vx-RfT"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="calendar" catalog="system">
@@ -482,24 +496,12 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bor-Wl-1t1">
                                 <rect key="frame" x="197" y="202" width="20" height="20"/>
                             </activityIndicatorView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGV-vM-TG1">
-                                <rect key="frame" x="50" y="378" width="344" height="22"/>
-                                <color key="backgroundColor" red="0.80563631979999994" green="0.73583800479999995" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ei-x4-BDi">
                                 <rect key="frame" x="20" y="378" width="22" height="22"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="FDC-dE-Y6S"/>
                                     <constraint firstAttribute="height" constant="22" id="mhD-xX-yIt"/>
-                                    <constraint firstAttribute="width" constant="22" id="w0L-fU-lQ2"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="location.square" catalog="system">
@@ -514,6 +516,18 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGV-vM-TG1">
+                                <rect key="frame" x="50" y="378" width="344" height="22"/>
+                                <color key="backgroundColor" red="0.80563631979999994" green="0.73583800479999995" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mqu-5h-HXf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -527,8 +541,8 @@
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="MOG-kK-70K" secondAttribute="trailing" constant="20" id="81m-5L-sIA"/>
                             <constraint firstItem="A9y-JO-c1T" firstAttribute="top" secondItem="HGV-vM-TG1" secondAttribute="bottom" constant="8" id="8B8-Nn-b8o"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="HGV-vM-TG1" secondAttribute="trailing" constant="20" id="8rJ-FF-PIw"/>
-                            <constraint firstItem="HGV-vM-TG1" firstAttribute="leading" secondItem="1Ei-x4-BDi" secondAttribute="trailing" constant="8" id="C0T-wM-aGT"/>
                             <constraint firstItem="1Ei-x4-BDi" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="DQR-R0-Jsu"/>
+                            <constraint firstItem="c54-gb-8vO" firstAttribute="top" secondItem="HGV-vM-TG1" secondAttribute="bottom" constant="37" id="Ekf-5K-YNA"/>
                             <constraint firstItem="T87-NX-bfL" firstAttribute="trailing" secondItem="Mqu-5h-HXf" secondAttribute="trailing" id="O7O-zX-23F"/>
                             <constraint firstItem="bor-Wl-1t1" firstAttribute="centerX" secondItem="MOG-kK-70K" secondAttribute="centerX" id="P1A-Dq-E4q"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="bottom" secondItem="xF6-x1-mFN" secondAttribute="bottom" constant="20" id="QZ5-xD-41j"/>
@@ -538,15 +552,15 @@
                             <constraint firstItem="5Td-eC-dSd" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="Wji-mK-YUn"/>
                             <constraint firstItem="1Ta-YG-ckn" firstAttribute="centerX" secondItem="Z3b-SR-ZhC" secondAttribute="centerX" id="Y1T-NJ-DMC"/>
                             <constraint firstItem="c54-gb-8vO" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="b9G-20-67N"/>
+                            <constraint firstItem="5Td-eC-dSd" firstAttribute="top" secondItem="HGV-vM-TG1" secondAttribute="bottom" constant="8" symbolic="YES" id="c4R-1s-pET"/>
                             <constraint firstItem="xF6-x1-mFN" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="cm3-Wh-f7j"/>
+                            <constraint firstItem="HGV-vM-TG1" firstAttribute="leading" secondItem="1Ei-x4-BDi" secondAttribute="trailing" constant="8" id="ftU-mR-OlT"/>
                             <constraint firstItem="kMO-4m-zRt" firstAttribute="top" secondItem="MOG-kK-70K" secondAttribute="bottom" constant="8" symbolic="YES" id="gdO-9X-gCm"/>
                             <constraint firstItem="T87-NX-bfL" firstAttribute="top" secondItem="Z3b-SR-ZhC" secondAttribute="top" id="ilb-NW-eWr"/>
                             <constraint firstItem="NkZ-MZ-N0y" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="jVt-dA-HdZ"/>
-                            <constraint firstItem="5Td-eC-dSd" firstAttribute="top" secondItem="kMO-4m-zRt" secondAttribute="bottom" constant="38" id="lQ9-sT-QrY"/>
                             <constraint firstAttribute="bottom" secondItem="T87-NX-bfL" secondAttribute="bottom" id="mYm-Mz-dc0"/>
                             <constraint firstItem="MOG-kK-70K" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="nQE-Yj-8LS"/>
                             <constraint firstItem="kMO-4m-zRt" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="p8f-em-pJh"/>
-                            <constraint firstItem="c54-gb-8vO" firstAttribute="top" secondItem="kMO-4m-zRt" secondAttribute="bottom" constant="67" id="pm0-PT-JKo"/>
                             <constraint firstItem="1Ei-x4-BDi" firstAttribute="top" secondItem="kMO-4m-zRt" secondAttribute="bottom" constant="8" id="rts-xW-nVA"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="A9y-JO-c1T" secondAttribute="trailing" constant="20" id="t90-6d-Eel"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="2My-da-mZV" secondAttribute="trailing" constant="20" id="ucH-a0-qi5"/>
@@ -592,10 +606,10 @@
     </scenes>
     <designables>
         <designable name="LbA-xM-LQI">
-            <size key="intrinsicContentSize" width="228" height="43"/>
+            <size key="intrinsicContentSize" width="252" height="44.5"/>
         </designable>
         <designable name="trk-kK-8Ke">
-            <size key="intrinsicContentSize" width="200" height="43"/>
+            <size key="intrinsicContentSize" width="224" height="44.5"/>
         </designable>
     </designables>
     <resources>
