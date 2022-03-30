@@ -47,19 +47,9 @@ class FinalEventBarViewController: UIViewController {
             print(randomEvent)
             
 // MARK: - Get random image from Event
-            if let images = randomEvent.images {
-                if let image = images.randomElement() {
-                    if let urlImage = image.image {
-                        if let imageData = ImageManager.shared.fetchImage(from: urlImage) {
-                            self.eventImage.image = UIImage(data: imageData)
-                        }
-                    }
-                }
-            }
-//            guard let images = randomEvent.images else { return }
-//            guard let randomImage = images.randomElement() else { return }
-//            guard let urlImage = randomImage.image else { return }
-//            guard let imageData = ImageManager.shared.fetchImage(from: urlImage) else { return }
+           
+            guard let urlImage = randomEvent.images?.randomElement()?.image else { return }
+            guard let imageData = ImageManager.shared.fetchImage(from: urlImage) else { return }
                         
 // MARK: - Get date of event
             guard let date = randomEvent.dates else { return }
@@ -84,6 +74,7 @@ class FinalEventBarViewController: UIViewController {
             getPriceEvent(randomEvent: randomEvent)
             
             DispatchQueue.main.async {
+                self.eventImage.image = UIImage(data: imageData)
                 self.activityIndicator.stopAnimating()
             }
         }

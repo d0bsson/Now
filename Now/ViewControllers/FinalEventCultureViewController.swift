@@ -32,6 +32,7 @@ class FinalEventCultureViewController: UIViewController {
                                           descriptionPlaceLabel,
                                           addressPlaceLabel])
         fetchData(time: time, item: item)
+        
         placeActivityIndicator.startAnimating()
         placeActivityIndicator.hidesWhenStopped = true
     }
@@ -41,16 +42,34 @@ class FinalEventCultureViewController: UIViewController {
         
         Network.shared.fetchEventData(from: url) { result in
             guard let randomPlace = result.results?.randomElement() else { return }
+            self.randomPlace = randomPlace
             print(randomPlace)
-            if let images = randomPlace.images {
-                if let image = images.randomElement() {
-                    if let urlImage = image.image {
-                        if let imageData = ImageManager.shared.fetchImage(from: urlImage) {
-                            self.placeImage.image = UIImage(data: imageData)
-                            self.placeActivityIndicator.stopAnimating()
-                        }
-                    }
-                }
+            
+            guard let urlImage = randomPlace.images?.randomElement()?.image else { return }
+            guard let imageData = ImageManager.shared.fetchImage(from: urlImage) else { return }
+            
+// MARK: - Get date of event
+                        guard let date = randomPlace.dates else { return }
+                        guard let endDate = date.first else { return }
+                        guard let startDate = endDate.start else { return }
+                        self.datePlaceLabel.text = String(startDate)
+
+// MARK: - Get name event
+                        guard let nameEvent = randomPlace.title else { return }
+                        self.namePlaceLabel.text = nameEvent
+
+// MARK: - Get description event
+                        guard let descriptionEvent = randomPlace.description else { return }
+                        let decoderString = String(htmlEncodedString: descriptionEvent)
+                        self.descriptionPlaceLabel.text = decoderString
+
+// MARK: - Get address event
+                        guard let place = randomPlace.place else { return }
+                        self.addressPlaceLabel.text = place.address
+
+            DispatchQueue.main.async {
+                self.placeImage.image = UIImage(data: imageData)
+                self.placeActivityIndicator.stopAnimating()
             }
         }
     }

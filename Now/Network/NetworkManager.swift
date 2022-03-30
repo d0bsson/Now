@@ -106,7 +106,7 @@ final class ImageManager {
         guard let imageURL = URL(string: stringURL) else { return nil }
         return try? Data(contentsOf: imageURL)
     }
-    
+        
     init() {}
 }
 
