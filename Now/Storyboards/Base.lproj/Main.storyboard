@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vhp-Ik-O01">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -237,6 +236,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buyTicketPlacePressed" destination="0eR-hV-BvM" eventType="touchUpInside" id="9KP-bQ-ShO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGE-vs-kOW">
                                 <rect key="frame" x="20" y="386.66666666666669" width="22" height="22"/>
@@ -254,6 +256,28 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k69-Zl-CV8">
+                                <rect key="frame" x="187" y="617" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="BCY-jh-dDq"/>
+                                    <constraint firstAttribute="height" constant="40" id="Bw7-Nk-hkj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="arrow.clockwise" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="heavy"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="refreshPlacePressed" destination="0eR-hV-BvM" eventType="touchUpInside" id="BlW-2Z-XMg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugw-ke-utN">
                                 <rect key="frame" x="20" y="358" width="22" height="22"/>
@@ -331,6 +355,12 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udS-lo-5Nl">
@@ -345,13 +375,18 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="byH-Fs-ONC">
+                                <rect key="frame" x="197" y="155.66666666666666" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VYR-Oc-0ng"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="m17-z5-bmJ" firstAttribute="leading" secondItem="HGE-vs-kOW" secondAttribute="trailing" constant="8" id="0Zu-s2-Dvz"/>
+                            <constraint firstItem="j2G-XP-Xb4" firstAttribute="top" secondItem="k69-Zl-CV8" secondAttribute="bottom" constant="16" id="1cZ-lf-zid"/>
                             <constraint firstItem="HGE-vs-kOW" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="3Rl-Eu-q2G"/>
                             <constraint firstItem="VYR-Oc-0ng" firstAttribute="trailing" secondItem="m17-z5-bmJ" secondAttribute="trailing" constant="20" id="4g2-lU-5pm"/>
+                            <constraint firstItem="k69-Zl-CV8" firstAttribute="centerX" secondItem="ye2-cp-5GC" secondAttribute="centerX" id="4qY-i4-YDH"/>
                             <constraint firstItem="VYR-Oc-0ng" firstAttribute="trailing" secondItem="j2G-XP-Xb4" secondAttribute="trailing" constant="20" id="6fh-xe-d9O"/>
                             <constraint firstItem="raq-VO-hlH" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="9wH-38-Sdd"/>
                             <constraint firstItem="udS-lo-5Nl" firstAttribute="top" secondItem="RvD-zm-2IG" secondAttribute="bottom" constant="8" id="CMN-Wa-s8k"/>
@@ -375,6 +410,7 @@
                             <constraint firstItem="raq-VO-hlH" firstAttribute="top" secondItem="udS-lo-5Nl" secondAttribute="bottom" constant="8" id="fXL-Xb-hfv"/>
                             <constraint firstItem="ugw-ke-utN" firstAttribute="top" secondItem="raq-VO-hlH" secondAttribute="bottom" constant="4.6666666666666856" id="m1v-0c-uYw"/>
                             <constraint firstAttribute="bottom" secondItem="XHJ-te-LsG" secondAttribute="bottom" id="nT7-ZE-TwT"/>
+                            <constraint firstItem="byH-Fs-ONC" firstAttribute="centerX" secondItem="RvD-zm-2IG" secondAttribute="centerX" id="pSr-di-Xxs"/>
                             <constraint firstItem="j2G-XP-Xb4" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="quu-cB-AJk"/>
                             <constraint firstItem="hh1-4E-NNe" firstAttribute="top" secondItem="udS-lo-5Nl" secondAttribute="bottom" constant="8" id="sF3-su-JLP"/>
                             <constraint firstItem="hh1-4E-NNe" firstAttribute="leading" secondItem="ugw-ke-utN" secondAttribute="trailing" constant="8" symbolic="YES" id="sh5-au-f3K"/>
@@ -383,11 +419,18 @@
                             <constraint firstItem="HGE-vs-kOW" firstAttribute="top" secondItem="2NC-n3-Pmu" secondAttribute="bottom" constant="6.6666666666666856" id="vPw-yK-lsj"/>
                             <constraint firstItem="XHJ-te-LsG" firstAttribute="top" secondItem="ye2-cp-5GC" secondAttribute="top" id="yoi-sm-Yvb"/>
                             <constraint firstItem="VYR-Oc-0ng" firstAttribute="trailing" secondItem="2NC-n3-Pmu" secondAttribute="trailing" constant="20" id="yzi-93-fDN"/>
+                            <constraint firstItem="byH-Fs-ONC" firstAttribute="centerY" secondItem="RvD-zm-2IG" secondAttribute="centerY" id="zxJ-8q-ag0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QWY-lP-v5K"/>
                     <connections>
+                        <outlet property="addressPlaceLabel" destination="hh1-4E-NNe" id="A5u-Da-xn3"/>
                         <outlet property="backgroundView" destination="XHJ-te-LsG" id="4GZ-NJ-dS9"/>
+                        <outlet property="datePlaceLabel" destination="m17-z5-bmJ" id="MKV-z3-EMy"/>
+                        <outlet property="descriptionPlaceLabel" destination="udS-lo-5Nl" id="MNN-pa-HNG"/>
+                        <outlet property="imagePlaceLabel" destination="RvD-zm-2IG" id="Kzk-la-lc4"/>
+                        <outlet property="namePlaceLabel" destination="ROb-Db-Tnl" id="1Eo-cr-DSE"/>
+                        <outlet property="pricePlaceLabel" destination="2NC-n3-Pmu" id="Cep-Nn-f7f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1PY-wN-ruY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -529,7 +572,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -561,7 +604,7 @@
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -611,7 +654,7 @@
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -627,7 +670,7 @@
                                 <size key="shadowOffset" width="100" height="0.0"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -640,7 +683,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="0.0"/>
@@ -682,7 +725,7 @@
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>

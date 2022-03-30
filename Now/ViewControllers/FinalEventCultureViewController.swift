@@ -9,6 +9,13 @@ import UIKit
 
 class FinalEventCultureViewController: UIViewController {
     
+    @IBOutlet weak var namePlaceLabel: UILabel!
+    @IBOutlet weak var imagePlaceLabel: UIImageView!
+    @IBOutlet weak var descriptionPlaceLabel: UILabel!
+    @IBOutlet weak var addressPlaceLabel: UILabel!
+    @IBOutlet weak var pricePlaceLabel: UILabel!
+    @IBOutlet weak var datePlaceLabel: UILabel!
+    
     @IBOutlet weak var backgroundView: UIView!
     
     var time = ""
@@ -28,5 +35,14 @@ class FinalEventCultureViewController: UIViewController {
             guard let randomPlace = result.results?.randomElement() else { return }
             print(randomPlace)
         }
+    }
+    
+    @IBAction func refreshPlacePressed() {
+        
+    }
+    
+    
+    @IBAction func buyTicketPlacePressed() {
+        
     }
 }
