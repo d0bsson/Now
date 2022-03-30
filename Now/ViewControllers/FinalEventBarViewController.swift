@@ -21,20 +21,19 @@ class FinalEventBarViewController: UIViewController {
     
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var sourceButton: UIButton!
     
     var time = ""
     var item = ""
         
     override func viewDidLoad() {
-        descriptionEventLabel.adjustsFontSizeToFitWidth = true
-        
-        descriptionEventLabel.minimumScaleFactor = 0.0001
         super.viewDidLoad()
         Constans.getGradient(with: self.view, to: backgroundView)
-        
+        Constans.adjustsFontSize(labels: [nameEventLabel,
+                                          descriptionEventLabel,
+                                          addressLabel])
         fetchData(time: time, item: item)
-                
+        fetchData(time: time, item: item)
+
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
     }
@@ -45,37 +44,46 @@ class FinalEventBarViewController: UIViewController {
         Network.shared.fetchEventData(from: url) { [self] result in
             guard let randomEvent = result.results?.randomElement() else { return }
             self.randomEvent = randomEvent
+            print(randomEvent)
             
 // MARK: - Get random image from Event
-            guard let images = randomEvent.images else { return }
-            guard let randomImage = images.randomElement() else { return }
-            guard let urlImage = randomImage.image else { return }
-            guard let imageData = ImageManager.shared.fetchImage(from: urlImage) else { return }
+            if let images = randomEvent.images {
+                if let image = images.randomElement() {
+                    if let urlImage = image.image {
+                        if let imageData = ImageManager.shared.fetchImage(from: urlImage) {
+                            self.eventImage.image = UIImage(data: imageData)
+                        }
+                    }
+                }
+            }
+//            guard let images = randomEvent.images else { return }
+//            guard let randomImage = images.randomElement() else { return }
+//            guard let urlImage = randomImage.image else { return }
+//            guard let imageData = ImageManager.shared.fetchImage(from: urlImage) else { return }
                         
 // MARK: - Get date of event
             guard let date = randomEvent.dates else { return }
             guard let endDate = date.first else { return }
             guard let startDate = endDate.start else { return }
-            
+            self.dateLabel.text = String(startDate)
+
 // MARK: - Get name event
             guard let nameEvent = randomEvent.title else { return }
-            
+            self.nameEventLabel.text = nameEvent
+
 // MARK: - Get description event
             guard let descriptionEvent = randomEvent.description else { return }
             let decoderString = String(htmlEncodedString: descriptionEvent)
-            
+            self.descriptionEventLabel.text = decoderString
+
 // MARK: - Get address event
             guard let place = randomEvent.place else { return }
-            
+            self.addressLabel.text = place.address
+
 // MARK: - Get price event
             getPriceEvent(randomEvent: randomEvent)
             
             DispatchQueue.main.async {
-                self.eventImage.image = UIImage(data: imageData)
-                self.dateLabel.text = String(startDate)
-                self.nameEventLabel.text = nameEvent
-                self.descriptionEventLabel.text = decoderString
-                self.addressLabel.text = place.address
                 self.activityIndicator.stopAnimating()
             }
         }

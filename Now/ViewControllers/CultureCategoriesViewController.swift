@@ -8,6 +8,7 @@
 import UIKit
 
 class CultureCategoriesViewController: UICollectionViewController {
+    
     @IBOutlet var collectionViewCulture: UICollectionView!
     
     var cultures: [Culture] = []
@@ -104,7 +105,8 @@ class CultureCategoriesViewController: UICollectionViewController {
     }
     
     private func tranferItem(time: String, item: String) {
-        if let cultureVC = storyboard?.instantiateViewController(withIdentifier: "bar") as? FinalEventCultureViewController {
+        
+        if let cultureVC = storyboard?.instantiateViewController(withIdentifier: "culture") as? FinalEventCultureViewController {
             cultureVC.time = time
             cultureVC.item = item
             self.navigationController?.pushViewController(cultureVC, animated: true)

@@ -28,4 +28,11 @@ struct Constans {
         
         outletView.layer.addSublayer(gradientLayer)
     }
+    
+    static func adjustsFontSize(labels: [UILabel]) {
+        for label in labels {
+            label.adjustsFontSizeToFitWidth = true
+            label.minimumScaleFactor = 0.0001
+        }
+    }
 }

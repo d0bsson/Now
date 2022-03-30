@@ -24,10 +24,9 @@ class FinalEventCultureViewController: UIViewController {
     func fetchData(time: String, item: String) {
         let url = "https://kudago.com/public-api/v1.4/places/?lang=ru&fields=dates,title,short_title,slug,place,description,body_text,price,images,site_url&categories=\(item)&expand=images&location=msk&actual_since=\(time)"
         
-        Network.shared.fetchPlaceData(from: url) { result in
-            print(result.results?.randomElement() ?? "")
-//            guard let qqq = result.results?.randomElement() else { return }
-            
+        Network.shared.fetchEventData(from: url) { result in
+            guard let randomPlace = result.results?.randomElement() else { return }
+            print(randomPlace)
         }
     }
 }
