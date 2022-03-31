@@ -27,6 +27,8 @@ class FinalEventCultureViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isToolbarHidden = true
+        
         Constans.getGradient(with: self.view, to: backgroundView)
         Constans.adjustsFontSize(labels: [namePlaceLabel,
                                           descriptionPlaceLabel,
@@ -43,16 +45,15 @@ class FinalEventCultureViewController: UIViewController {
         Network.shared.fetchEventData(from: url) { result in
             guard let randomPlace = result.results?.randomElement() else { return }
             self.randomPlace = randomPlace
-            print(randomPlace)
-            
+                        
             guard let urlImage = randomPlace.images?.randomElement()?.image else { return }
             guard let imageData = ImageManager.shared.fetchImage(from: urlImage) else { return }
             
 // MARK: - Get date of event
-                        guard let date = randomPlace.dates else { return }
-                        guard let endDate = date.first else { return }
-                        guard let startDate = endDate.start else { return }
-                        self.datePlaceLabel.text = String(startDate)
+//                        guard let date = randomPlace.dates else { return }
+//                        guard let endDate = date.first else { return }
+//                        guard let startDate = endDate.start else { return }
+//                        self.datePlaceLabel.text = String(startDate)
 
 // MARK: - Get name event
                         guard let nameEvent = randomPlace.title else { return }
@@ -64,8 +65,8 @@ class FinalEventCultureViewController: UIViewController {
                         self.descriptionPlaceLabel.text = decoderString
 
 // MARK: - Get address event
-                        guard let place = randomPlace.place else { return }
-                        self.addressPlaceLabel.text = place.address
+//                        guard let place = randomPlace.place else { return }
+//                        self.addressPlaceLabel.text = place.address
 
             DispatchQueue.main.async {
                 self.placeImage.image = UIImage(data: imageData)
