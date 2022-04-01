@@ -55,6 +55,7 @@ class FinalEventBarViewController: UIViewController {
 //            guard let endDate = date.first else { return }
 //            guard let startDate = endDate.start else { return }
 //            self.dateLabel.text = String(startDate)
+            self.dateLabel.text = "1 апреля в 18:00"
 
 // MARK: - Get name event
             guard let nameEvent = randomEvent.title else { return }
@@ -66,8 +67,8 @@ class FinalEventBarViewController: UIViewController {
             self.descriptionEventLabel.text = decoderString
 
 // MARK: - Get address event
-//            guard let place = randomEvent.place else { return }
-//            self.addressLabel.text = place.address
+            guard let place = randomEvent.place else { return }
+            self.addressLabel.text = place.address
 
 // MARK: - Get price event
             getPriceEvent(randomEvent: randomEvent)

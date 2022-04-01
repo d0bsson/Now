@@ -365,7 +365,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udS-lo-5Nl">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="udS-lo-5Nl">
                                 <rect key="frame" x="20" y="429" width="374" height="24"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
@@ -410,6 +410,7 @@
                             <constraint firstItem="Gt7-5G-NIu" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="Yja-K0-N3L"/>
                             <constraint firstItem="ROb-Db-Tnl" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="aKd-af-zz8"/>
                             <constraint firstItem="Gt7-5G-NIu" firstAttribute="top" secondItem="rXW-nE-l6R" secondAttribute="bottom" constant="8" id="aRQ-QL-w80"/>
+                            <constraint firstItem="k69-Zl-CV8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="m17-z5-bmJ" secondAttribute="bottom" constant="8" id="b90-xh-YEo"/>
                             <constraint firstItem="raq-VO-hlH" firstAttribute="top" secondItem="udS-lo-5Nl" secondAttribute="bottom" constant="8" id="dc6-pc-ejo"/>
                             <constraint firstAttribute="bottomMargin" secondItem="RvD-zm-2IG" secondAttribute="bottom" constant="441" id="esK-7U-4XK"/>
                             <constraint firstAttribute="bottom" secondItem="XHJ-te-LsG" secondAttribute="bottom" id="nT7-ZE-TwT"/>
@@ -437,7 +438,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1PY-wN-ruY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3231.884057971015" y="450.00000000000006"/>
+            <point key="canvasLocation" x="4246" y="411"/>
         </scene>
         <!--Bar Categories View Controller-->
         <scene sceneID="ktU-40-jJS">
@@ -787,7 +788,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SmM-Sq-ck9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3231.884057971015" y="-228.34821428571428"/>
+            <point key="canvasLocation" x="3297" y="410"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C0l-VC-AHT">

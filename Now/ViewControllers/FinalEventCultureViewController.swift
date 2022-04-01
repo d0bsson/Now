@@ -26,9 +26,7 @@ class FinalEventCultureViewController: UIViewController {
     var item = ""
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.navigationController?.isToolbarHidden = true
-        
+        super.viewDidLoad()        
         Constans.getGradient(with: self.view, to: backgroundView)
         Constans.adjustsFontSize(labels: [namePlaceLabel,
                                           descriptionPlaceLabel,
