@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CultureCategoriesViewController: UICollectionViewController {
+class PlaceCategoriesViewController: UICollectionViewController {
     
     @IBOutlet var collectionViewCulture: UICollectionView!
     
@@ -106,7 +106,7 @@ class CultureCategoriesViewController: UICollectionViewController {
     
     private func tranferItem(time: String, item: String) {
         
-        if let cultureVC = storyboard?.instantiateViewController(withIdentifier: "culture") as? FinalEventCultureViewController {
+        if let cultureVC = storyboard?.instantiateViewController(withIdentifier: "culture") as? RandomEventCultureViewController {
             cultureVC.time = time
             cultureVC.item = item
             self.navigationController?.pushViewController(cultureVC, animated: true)
@@ -114,7 +114,7 @@ class CultureCategoriesViewController: UICollectionViewController {
     }
     
     private func fetchData() {
-        Network.shared.fetchCultureCategories(from: urlCulture) { [weak self] culture in
+        Network.shared.fetchPlacesCategories(from: urlCulture) { [weak self] culture in
             self?.cultures = culture
             self?.collectionView.reloadData()
         }

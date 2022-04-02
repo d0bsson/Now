@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BarAndCultureViewController: UIViewController {
+class EventAndPlaceViewController: UIViewController {
 
     @IBOutlet weak var gradientLayerView: UIView!
     

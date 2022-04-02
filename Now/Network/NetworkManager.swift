@@ -76,7 +76,7 @@ final class Network {
     }
     
     
-    func fetchCultureCategories(from url: String, with comlition: @escaping ([Culture]) -> Void) {
+    func fetchPlacesCategories(from url: String, with comlition: @escaping ([Culture]) -> Void) {
         guard let urlString = URL(string: url) else { return }
         URLSession.shared.dataTask(with: urlString) { data, _, error in
             if let error = error {
@@ -110,14 +110,6 @@ final class ImageManager {
     init() {}
 }
 
-extension Data {
-    func parseData(removeString string: String) -> Data? {
-        let dataAsString = String(data: self, encoding: .utf8)
-        let parsedDataString = dataAsString?.replacingOccurrences(of: string, with: "")
-        guard let data = parsedDataString?.data(using: .utf8) else { return nil}
-        return data
-    }
-}
 
 
 

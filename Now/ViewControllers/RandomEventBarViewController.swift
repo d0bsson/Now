@@ -8,7 +8,7 @@
 import UIKit
 import SafariServices
 
-class FinalEventBarViewController: UIViewController {
+class RandomEventBarViewController: UIViewController {
     private var randomEvent: BarResult?
     
     @IBOutlet weak var eventImage: UIImageView!

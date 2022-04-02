@@ -8,7 +8,7 @@
 import UIKit
 import SafariServices
 
-class FinalEventCultureViewController: UIViewController {
+class RandomEventCultureViewController: UIViewController {
     private var randomPlace: PlaceResult?
     
     @IBOutlet weak var placeImage: UIImageView!

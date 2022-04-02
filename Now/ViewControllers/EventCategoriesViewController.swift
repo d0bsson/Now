@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BarCategoriesViewController: UICollectionViewController {
+class EventCategoriesViewController: UICollectionViewController {
     
     @IBOutlet var collectionViewBar: UICollectionView!
     
@@ -73,7 +73,7 @@ class BarCategoriesViewController: UICollectionViewController {
     
     private func tranferItem(time: String, item: String) {
         
-        if let barVC = storyboard?.instantiateViewController(withIdentifier: "bar") as? FinalEventBarViewController {
+        if let barVC = storyboard?.instantiateViewController(withIdentifier: "bar") as? RandomEventBarViewController {
             barVC.time = time
             barVC.item = item
             self.navigationController?.pushViewController(barVC, animated: true)
