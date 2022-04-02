@@ -49,7 +49,6 @@ class FinalEventCultureViewController: UIViewController {
             
 // MARK: - Get name event
             guard let namePlace = randomPlace.shortTitle else { return }
-            
 // MARK: - Get description event
             guard let descriptionEvent = randomPlace.resultDescription else { return }
             let decoderString = String(htmlEncodedString: descriptionEvent)
@@ -69,7 +68,7 @@ class FinalEventCultureViewController: UIViewController {
                 self.descriptionPlaceLabel.text = decoderString
                 self.addressPlaceLabel.text = addressPlace
                 self.phonePlaceLabel.text = phonePlace
-                self.subwayPlace.text = subwayPlace
+                self.subwayPlace.text = "метро \(subwayPlace)"
                 self.placeActivityIndicator.stopAnimating()
             }
         }
