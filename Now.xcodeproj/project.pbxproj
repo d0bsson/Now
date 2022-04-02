@@ -89,7 +89,6 @@
 				D744A68627B6E64300A934D6 /* Storyboards */,
 				D744A68727B6E65E00A934D6 /* Supports */,
 				D744A66C27B4512300A934D6 /* Assets.xcassets */,
-				D744A67127B4512300A934D6 /* Info.plist */,
 			);
 			path = Now;
 			sourceTree = "<group>";
@@ -118,6 +117,7 @@
 		D744A68727B6E65E00A934D6 /* Supports */ = {
 			isa = PBXGroup;
 			children = (
+				D744A67127B4512300A934D6 /* Info.plist */,
 				D744A66327B4512100A934D6 /* AppDelegate.swift */,
 				D744A66527B4512100A934D6 /* SceneDelegate.swift */,
 				D711050127EE1B9400308E77 /* Constants.swift */,
