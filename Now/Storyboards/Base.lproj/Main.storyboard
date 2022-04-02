@@ -179,6 +179,12 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="cultureCellLabel" destination="pjt-1O-yIb" id="sb3-eD-Scn"/>
@@ -457,7 +463,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1PY-wN-ruY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3900" y="410"/>
+            <point key="canvasLocation" x="4017" y="410"/>
         </scene>
         <!--Bar Categories View Controller-->
         <scene sceneID="ktU-40-jJS">
@@ -537,7 +543,7 @@
                             <outlet property="delegate" destination="w5h-AL-o69" id="L9B-9A-k5T"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="DMj-yq-rfm"/>
+                    <navigationItem key="navigationItem" id="DMj-yq-rfm"/>
                     <connections>
                         <outlet property="collectionViewBar" destination="fOt-5Y-KS6" id="779-7e-z4D"/>
                     </connections>

@@ -22,6 +22,7 @@ class FinalEventBarViewController: UIViewController {
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    let formatter = DateFormatter()
     var time = ""
     var item = ""
         
@@ -51,24 +52,22 @@ class FinalEventBarViewController: UIViewController {
             guard let imageData = ImageManager.shared.fetchImage(from: urlImage) else { return }
                         
 // MARK: - Get date of event
-//            guard let date = randomEvent.dates else { return }
-//            guard let endDate = date.first else { return }
-//            guard let startDate = endDate.start else { return }
-//            self.dateLabel.text = String(startDate)
-            self.dateLabel.text = "1 апреля в 18:00"
+            guard let date = randomEvent.dates else { return }
+            guard let endDate = date.first else { return }
+            guard let startDate = endDate.start else { return }
+            formatter.dateFormat = "E, d MMM в HH:mm"
+            formatter.timeZone = .current
+            formatter.locale = .current
 
 // MARK: - Get name event
             guard let nameEvent = randomEvent.title else { return }
-            self.nameEventLabel.text = nameEvent
 
 // MARK: - Get description event
             guard let descriptionEvent = randomEvent.description else { return }
             let decoderString = String(htmlEncodedString: descriptionEvent)
-            self.descriptionEventLabel.text = decoderString
 
 // MARK: - Get address event
             guard let place = randomEvent.place else { return }
-            self.addressLabel.text = place.address
 
 // MARK: - Get price event
             getPriceEvent(randomEvent: randomEvent)
@@ -76,6 +75,11 @@ class FinalEventBarViewController: UIViewController {
             DispatchQueue.main.async {
                 self.eventImage.image = UIImage(data: imageData)
                 self.activityIndicator.stopAnimating()
+                self.addressLabel.text = place.address
+                self.descriptionEventLabel.text = decoderString
+                self.nameEventLabel.text = nameEvent
+                self.dateLabel.text = formatter.string(from: startDate)
+                self.navigationItem.title = nameEvent
             }
         }
     }

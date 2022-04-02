@@ -41,8 +41,8 @@ struct EventImage: Codable {
 }
 
 struct Dates: Codable {
-    let start: Int?
-    let end: Int?
+    let start: Date?
+    let end: Date?
 }
 
 struct BarPlace: Codable {
