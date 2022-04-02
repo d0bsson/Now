@@ -23,7 +23,7 @@ struct BarResult: Codable {
     let description: String?
     let bodyText: String?
     let price: String?
-    var images: [Image]?
+    var images: [EventImage]?
     var siteURL: String?
     
     enum CodingKeys: String, CodingKey {
@@ -36,7 +36,7 @@ struct BarResult: Codable {
         }
 }
 
-struct Image: Codable {
+struct EventImage: Codable {
     let image: String?
 }
 

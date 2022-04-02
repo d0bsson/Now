@@ -9,15 +9,15 @@ import UIKit
 import SafariServices
 
 class FinalEventCultureViewController: UIViewController {
-    private var randomPlace: BarResult?
+    private var randomPlace: PlaceResult?
     
     @IBOutlet weak var placeImage: UIImageView!
     
     @IBOutlet weak var namePlaceLabel: UILabel!
     @IBOutlet weak var descriptionPlaceLabel: UILabel!
     @IBOutlet weak var addressPlaceLabel: UILabel!
-    @IBOutlet weak var pricePlaceLabel: UILabel!
-    @IBOutlet weak var datePlaceLabel: UILabel!
+    @IBOutlet weak var subwayPlace: UILabel!
+    @IBOutlet weak var phonePlaceLabel: UILabel!
     
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var placeActivityIndicator: UIActivityIndicatorView!
@@ -26,7 +26,7 @@ class FinalEventCultureViewController: UIViewController {
     var item = ""
     
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
         Constans.getGradient(with: self.view, to: backgroundView)
         Constans.adjustsFontSize(labels: [namePlaceLabel,
                                           descriptionPlaceLabel,
@@ -38,36 +38,38 @@ class FinalEventCultureViewController: UIViewController {
     }
     
     func fetchData(time: String, item: String) {
-        let url = "https://kudago.com/public-api/v1.4/places/?lang=ru&fields=dates,title,short_title,slug,place,description,body_text,price,images,site_url&categories=\(item)&expand=images&location=msk&actual_since=\(time)"
+        let url = "https://kudago.com/public-api/v1.4/places/?lang=ru&fields=images,short_title,address,phone,description,foreign_url,subway&expand=&text_format=&ids=&location=msk&has_showings=&categories=\(item)"
         
-        Network.shared.fetchEventData(from: url) { result in
+        Network.shared.fetchPlaceData(from: url) { result in
             guard let randomPlace = result.results?.randomElement() else { return }
             self.randomPlace = randomPlace
-                        
+// MARK: - Get name event
             guard let urlImage = randomPlace.images?.randomElement()?.image else { return }
             guard let imageData = ImageManager.shared.fetchImage(from: urlImage) else { return }
             
-// MARK: - Get date of event
-//                        guard let date = randomPlace.dates else { return }
-//                        guard let endDate = date.first else { return }
-//                        guard let startDate = endDate.start else { return }
-//                        self.datePlaceLabel.text = String(startDate)
-
 // MARK: - Get name event
-                        guard let nameEvent = randomPlace.title else { return }
-                        self.namePlaceLabel.text = nameEvent
-
+            guard let namePlace = randomPlace.shortTitle else { return }
+            
 // MARK: - Get description event
-                        guard let descriptionEvent = randomPlace.description else { return }
-                        let decoderString = String(htmlEncodedString: descriptionEvent)
-                        self.descriptionPlaceLabel.text = decoderString
-
+            guard let descriptionEvent = randomPlace.resultDescription else { return }
+            let decoderString = String(htmlEncodedString: descriptionEvent)
+            
 // MARK: - Get address event
-                        guard let place = randomPlace.place else { return }
-
+            guard let addressPlace = randomPlace.address else { return }
+            
+// MARK: - Get phone number
+            guard let phonePlace = randomPlace.phone else { return }
+            
+// MARK: - Get subway place
+            guard let subwayPlace = randomPlace.subway else { return }
+            
             DispatchQueue.main.async {
                 self.placeImage.image = UIImage(data: imageData)
-                self.addressPlaceLabel.text = place.address
+                self.namePlaceLabel.text = namePlace
+                self.descriptionPlaceLabel.text = decoderString
+                self.addressPlaceLabel.text = addressPlace
+                self.phonePlaceLabel.text = phonePlace
+                self.subwayPlace.text = subwayPlace
                 self.placeActivityIndicator.stopAnimating()
             }
         }
@@ -79,7 +81,7 @@ class FinalEventCultureViewController: UIViewController {
     
     
     @IBAction func buyTicketPlacePressed() {
-        guard let url = URL(string: randomPlace?.siteURL ?? "") else { return }
+        guard let url = URL(string: randomPlace?.foreignURL ?? "") else { return }
         let source = SFSafariViewController(url: url)
         present(source, animated: true)
     }

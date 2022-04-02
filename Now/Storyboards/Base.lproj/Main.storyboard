@@ -241,14 +241,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gt7-5G-NIu">
-                                <rect key="frame" x="20" y="525" width="22" height="22"/>
+                                <rect key="frame" x="20" y="525" width="25" height="22"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="22" id="EzW-tx-idW"/>
+                                    <constraint firstAttribute="width" constant="25" id="EzW-tx-idW"/>
                                     <constraint firstAttribute="height" constant="22" id="kdZ-zr-gno"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="calendar" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="phone.fill" catalog="system">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -261,7 +261,6 @@
                                 <rect key="frame" x="185.5" y="743" width="43.5" height="40"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="BCY-jh-dDq"/>
                                     <constraint firstAttribute="height" constant="40" id="Bw7-Nk-hkj"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -280,15 +279,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXW-nE-l6R">
-                                <rect key="frame" x="20" y="493" width="22" height="22"/>
+                                <rect key="frame" x="20" y="493" width="25" height="22"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="22" id="B3U-Mh-cky"/>
+                                    <constraint firstAttribute="width" constant="25" id="B3U-Mh-cky"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="iJE-1a-jhQ"/>
                                     <constraint firstAttribute="height" constant="22" id="uMW-BT-Gbn"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="rublesign.square" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="train.side.front.car" catalog="system">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -298,7 +297,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m17-z5-bmJ">
-                                <rect key="frame" x="50" y="525" width="344" height="22"/>
+                                <rect key="frame" x="53" y="525" width="341" height="22"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="tub-q8-dS2"/>
@@ -313,10 +312,10 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raq-VO-hlH">
-                                <rect key="frame" x="20" y="461" width="22" height="22"/>
+                                <rect key="frame" x="20" y="461" width="25" height="22"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="22" id="IhE-xc-Uuy"/>
+                                    <constraint firstAttribute="width" constant="25" id="IhE-xc-Uuy"/>
                                     <constraint firstAttribute="height" constant="22" id="PoQ-qM-hMe"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -330,7 +329,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh1-4E-NNe">
-                                <rect key="frame" x="50" y="461" width="344" height="24"/>
+                                <rect key="frame" x="53" y="461" width="341" height="24"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -345,7 +344,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NC-n3-Pmu">
-                                <rect key="frame" x="50" y="493" width="344" height="24"/>
+                                <rect key="frame" x="53" y="493" width="341" height="24"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -373,6 +372,9 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="udS-lo-5Nl">
                                 <rect key="frame" x="20" y="429" width="374" height="24"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="N5q-7v-JrS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -400,6 +402,7 @@
                             <constraint firstItem="ROb-Db-Tnl" firstAttribute="top" secondItem="VYR-Oc-0ng" secondAttribute="top" constant="8" id="H2P-ar-8dF"/>
                             <constraint firstAttribute="trailing" secondItem="udS-lo-5Nl" secondAttribute="trailing" constant="20" id="Hzb-BH-NHa"/>
                             <constraint firstItem="2NC-n3-Pmu" firstAttribute="leading" secondItem="rXW-nE-l6R" secondAttribute="trailing" constant="8" id="IeQ-1p-coO"/>
+                            <constraint firstItem="k69-Zl-CV8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="m17-z5-bmJ" secondAttribute="bottom" constant="8" id="Ir9-9C-LrA"/>
                             <constraint firstItem="VYR-Oc-0ng" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="raq-VO-hlH" secondAttribute="trailing" symbolic="YES" id="JM3-KU-xbA"/>
                             <constraint firstItem="rXW-nE-l6R" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="L8c-vd-VI7"/>
                             <constraint firstItem="2NC-n3-Pmu" firstAttribute="top" secondItem="hh1-4E-NNe" secondAttribute="bottom" constant="8" id="LZX-CX-hOW"/>
@@ -413,8 +416,8 @@
                             <constraint firstItem="VYR-Oc-0ng" firstAttribute="trailing" secondItem="ROb-Db-Tnl" secondAttribute="trailing" constant="20" id="Vyj-96-Lrs"/>
                             <constraint firstItem="udS-lo-5Nl" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="Wa2-Mt-gQc"/>
                             <constraint firstItem="Gt7-5G-NIu" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="Yja-K0-N3L"/>
+                            <constraint firstItem="Gt7-5G-NIu" firstAttribute="top" secondItem="2NC-n3-Pmu" secondAttribute="bottom" constant="8" symbolic="YES" id="ZLd-zs-vdp"/>
                             <constraint firstItem="ROb-Db-Tnl" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="aKd-af-zz8"/>
-                            <constraint firstItem="Gt7-5G-NIu" firstAttribute="top" secondItem="rXW-nE-l6R" secondAttribute="bottom" constant="10" id="aRQ-QL-w80"/>
                             <constraint firstItem="raq-VO-hlH" firstAttribute="top" secondItem="udS-lo-5Nl" secondAttribute="bottom" constant="8" id="dc6-pc-ejo"/>
                             <constraint firstAttribute="bottomMargin" secondItem="RvD-zm-2IG" secondAttribute="bottom" constant="441" id="esK-7U-4XK"/>
                             <constraint firstItem="m17-z5-bmJ" firstAttribute="trailing" secondItem="2NC-n3-Pmu" secondAttribute="trailing" id="gOH-Tk-wOY"/>
@@ -432,17 +435,17 @@
                     <connections>
                         <outlet property="addressPlaceLabel" destination="hh1-4E-NNe" id="A5u-Da-xn3"/>
                         <outlet property="backgroundView" destination="XHJ-te-LsG" id="4GZ-NJ-dS9"/>
-                        <outlet property="datePlaceLabel" destination="m17-z5-bmJ" id="MKV-z3-EMy"/>
                         <outlet property="descriptionPlaceLabel" destination="udS-lo-5Nl" id="MNN-pa-HNG"/>
                         <outlet property="namePlaceLabel" destination="ROb-Db-Tnl" id="1Eo-cr-DSE"/>
+                        <outlet property="phonePlaceLabel" destination="m17-z5-bmJ" id="MKV-z3-EMy"/>
                         <outlet property="placeActivityIndicator" destination="byH-Fs-ONC" id="Xnr-SV-3Ct"/>
                         <outlet property="placeImage" destination="RvD-zm-2IG" id="Kzk-la-lc4"/>
-                        <outlet property="pricePlaceLabel" destination="2NC-n3-Pmu" id="Cep-Nn-f7f"/>
+                        <outlet property="subwayPlace" destination="2NC-n3-Pmu" id="Cep-Nn-f7f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1PY-wN-ruY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4246" y="411"/>
+            <point key="canvasLocation" x="3900" y="410"/>
         </scene>
         <!--Bar Categories View Controller-->
         <scene sceneID="ktU-40-jJS">
@@ -569,9 +572,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF6-x1-mFN">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF6-x1-mFN">
                                 <rect key="frame" x="20" y="799" width="374" height="43"/>
-                                <color key="backgroundColor" red="0.8078432083" green="0.8078432083" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.67450982329999998" green="0.69019609689999994" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Купить билет">
@@ -580,6 +583,12 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="opaqueSeparatorColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -632,12 +641,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ta-YG-ckn">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ta-YG-ckn">
                                 <rect key="frame" x="185" y="743" width="44" height="40"/>
-                                <color key="backgroundColor" red="0.8078432083" green="0.8078432083" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.67452121388700392" green="0.68790267437153507" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ZM3-xN-Lw3"/>
                                 </constraints>
+                                <color key="tintColor" red="0.6270912247474747" green="0.6270912247474747" blue="0.6270912247474747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" imagePadding="0.0">
                                     <imageReference key="image" image="arrow.clockwise" catalog="system" symbolScale="large"/>
@@ -647,6 +657,12 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="opaqueSeparatorColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -817,9 +833,14 @@
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="location.square" catalog="system" width="128" height="114"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
         <image name="rublesign.square" catalog="system" width="128" height="114"/>
+        <image name="train.side.front.car" catalog="system" width="128" height="73"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

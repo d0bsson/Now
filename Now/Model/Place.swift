@@ -7,28 +7,32 @@
 
 import Foundation
 
+// MARK: - Place
 struct Place: Codable {
     let count: Int?
     let next: String?
-    let previous: Int?
+    let previous: String?
     let results: [PlaceResult]?
 }
 
+// MARK: - Result
 struct PlaceResult: Codable {
-    let id: Int?
-    let title, slug, address, phone: String?
-    let siteURL: String?
+    let address, phone, resultDescription: String?
+    let foreignURL: String?
     let subway: String?
-    let isClosed: Bool?
-    let location: String?
-    let hasParkingLot: Bool?
+    let images: [PlaceImage]?
+    let shortTitle: String?
 
     enum CodingKeys: String, CodingKey {
-        case id, title, slug, address, phone
-        case siteURL = "site_url"
-        case subway
-        case isClosed = "is_closed"
-        case location
-        case hasParkingLot = "has_parking_lot"
+        case address, phone
+        case resultDescription = "description"
+        case foreignURL = "foreign_url"
+        case subway, images
+        case shortTitle = "short_title"
     }
+}
+
+// MARK: - Image
+struct PlaceImage: Codable {
+    let image: String?
 }
