@@ -241,11 +241,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gt7-5G-NIu">
-                                <rect key="frame" x="20" y="525" width="24" height="24"/>
+                                <rect key="frame" x="20" y="525" width="22" height="22"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="EzW-tx-idW"/>
-                                    <constraint firstAttribute="height" constant="24" id="kdZ-zr-gno"/>
+                                    <constraint firstAttribute="width" constant="22" id="EzW-tx-idW"/>
+                                    <constraint firstAttribute="height" constant="22" id="kdZ-zr-gno"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="calendar" catalog="system">
@@ -280,13 +280,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXW-nE-l6R">
-                                <rect key="frame" x="20" y="493" width="24" height="24"/>
+                                <rect key="frame" x="20" y="493" width="22" height="22"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="24" id="6gu-94-9oY"/>
-                                    <constraint firstAttribute="width" constant="24" id="B3U-Mh-cky"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="iJE-1a-jhQ"/>
-                                    <constraint firstAttribute="height" constant="24" id="uMW-BT-Gbn"/>
+                                    <constraint firstAttribute="width" constant="22" id="B3U-Mh-cky"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="iJE-1a-jhQ"/>
+                                    <constraint firstAttribute="height" constant="22" id="uMW-BT-Gbn"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="rublesign.square" catalog="system">
@@ -299,8 +298,11 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m17-z5-bmJ">
-                                <rect key="frame" x="52" y="525" width="342" height="24"/>
+                                <rect key="frame" x="50" y="525" width="344" height="22"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="tub-q8-dS2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -311,11 +313,11 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raq-VO-hlH">
-                                <rect key="frame" x="20" y="461" width="24" height="24"/>
+                                <rect key="frame" x="20" y="461" width="22" height="22"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="IhE-xc-Uuy"/>
-                                    <constraint firstAttribute="height" constant="24" id="PoQ-qM-hMe"/>
+                                    <constraint firstAttribute="width" constant="22" id="IhE-xc-Uuy"/>
+                                    <constraint firstAttribute="height" constant="22" id="PoQ-qM-hMe"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="location.square" catalog="system">
@@ -328,7 +330,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh1-4E-NNe">
-                                <rect key="frame" x="52" y="461" width="342" height="24"/>
+                                <rect key="frame" x="50" y="461" width="344" height="24"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -337,10 +339,13 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NC-n3-Pmu">
-                                <rect key="frame" x="52" y="493" width="342" height="24"/>
+                                <rect key="frame" x="50" y="493" width="344" height="24"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -358,7 +363,7 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="value" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="3"/>
@@ -386,8 +391,8 @@
                         <constraints>
                             <constraint firstItem="j2G-XP-Xb4" firstAttribute="top" secondItem="k69-Zl-CV8" secondAttribute="bottom" constant="16" id="1cZ-lf-zid"/>
                             <constraint firstItem="raq-VO-hlH" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="3Sd-Yz-iKn"/>
-                            <constraint firstItem="VYR-Oc-0ng" firstAttribute="trailing" secondItem="m17-z5-bmJ" secondAttribute="trailing" constant="20" id="4g2-lU-5pm"/>
                             <constraint firstItem="k69-Zl-CV8" firstAttribute="centerX" secondItem="ye2-cp-5GC" secondAttribute="centerX" id="4qY-i4-YDH"/>
+                            <constraint firstItem="m17-z5-bmJ" firstAttribute="top" secondItem="2NC-n3-Pmu" secondAttribute="bottom" constant="8" symbolic="YES" id="5D6-8d-xJ3"/>
                             <constraint firstItem="hh1-4E-NNe" firstAttribute="leading" secondItem="raq-VO-hlH" secondAttribute="trailing" constant="8" id="5O5-Gp-fTz"/>
                             <constraint firstItem="VYR-Oc-0ng" firstAttribute="trailing" secondItem="j2G-XP-Xb4" secondAttribute="trailing" constant="20" id="6fh-xe-d9O"/>
                             <constraint firstItem="udS-lo-5Nl" firstAttribute="top" secondItem="RvD-zm-2IG" secondAttribute="bottom" constant="8" id="CMN-Wa-s8k"/>
@@ -400,24 +405,23 @@
                             <constraint firstItem="2NC-n3-Pmu" firstAttribute="top" secondItem="hh1-4E-NNe" secondAttribute="bottom" constant="8" id="LZX-CX-hOW"/>
                             <constraint firstItem="VYR-Oc-0ng" firstAttribute="bottom" secondItem="j2G-XP-Xb4" secondAttribute="bottom" constant="20" id="MRw-Gn-iQ9"/>
                             <constraint firstItem="XHJ-te-LsG" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" id="OAD-Qm-5Yv"/>
-                            <constraint firstItem="m17-z5-bmJ" firstAttribute="leading" secondItem="Gt7-5G-NIu" secondAttribute="trailing" constant="8" id="RX8-F7-2jc"/>
                             <constraint firstItem="XHJ-te-LsG" firstAttribute="trailing" secondItem="VYR-Oc-0ng" secondAttribute="trailing" id="TRM-39-H3L"/>
                             <constraint firstItem="VYR-Oc-0ng" firstAttribute="trailing" secondItem="hh1-4E-NNe" secondAttribute="trailing" constant="20" id="UeE-iT-R3r"/>
                             <constraint firstItem="RvD-zm-2IG" firstAttribute="top" secondItem="ROb-Db-Tnl" secondAttribute="bottom" constant="8" id="Ueo-ki-UGT"/>
+                            <constraint firstItem="m17-z5-bmJ" firstAttribute="leading" secondItem="2NC-n3-Pmu" secondAttribute="leading" id="VWK-Bu-83w"/>
                             <constraint firstItem="VYR-Oc-0ng" firstAttribute="trailing" secondItem="RvD-zm-2IG" secondAttribute="trailing" constant="20" id="VXy-51-FMI"/>
                             <constraint firstItem="VYR-Oc-0ng" firstAttribute="trailing" secondItem="ROb-Db-Tnl" secondAttribute="trailing" constant="20" id="Vyj-96-Lrs"/>
                             <constraint firstItem="udS-lo-5Nl" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="Wa2-Mt-gQc"/>
                             <constraint firstItem="Gt7-5G-NIu" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="Yja-K0-N3L"/>
                             <constraint firstItem="ROb-Db-Tnl" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="aKd-af-zz8"/>
-                            <constraint firstItem="Gt7-5G-NIu" firstAttribute="top" secondItem="rXW-nE-l6R" secondAttribute="bottom" constant="8" id="aRQ-QL-w80"/>
-                            <constraint firstItem="k69-Zl-CV8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="m17-z5-bmJ" secondAttribute="bottom" constant="8" id="b90-xh-YEo"/>
+                            <constraint firstItem="Gt7-5G-NIu" firstAttribute="top" secondItem="rXW-nE-l6R" secondAttribute="bottom" constant="10" id="aRQ-QL-w80"/>
                             <constraint firstItem="raq-VO-hlH" firstAttribute="top" secondItem="udS-lo-5Nl" secondAttribute="bottom" constant="8" id="dc6-pc-ejo"/>
                             <constraint firstAttribute="bottomMargin" secondItem="RvD-zm-2IG" secondAttribute="bottom" constant="441" id="esK-7U-4XK"/>
+                            <constraint firstItem="m17-z5-bmJ" firstAttribute="trailing" secondItem="2NC-n3-Pmu" secondAttribute="trailing" id="gOH-Tk-wOY"/>
                             <constraint firstAttribute="bottom" secondItem="XHJ-te-LsG" secondAttribute="bottom" id="nT7-ZE-TwT"/>
                             <constraint firstItem="byH-Fs-ONC" firstAttribute="centerX" secondItem="RvD-zm-2IG" secondAttribute="centerX" id="pSr-di-Xxs"/>
                             <constraint firstItem="j2G-XP-Xb4" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="quu-cB-AJk"/>
                             <constraint firstItem="hh1-4E-NNe" firstAttribute="top" secondItem="udS-lo-5Nl" secondAttribute="bottom" constant="8" id="sF3-su-JLP"/>
-                            <constraint firstItem="m17-z5-bmJ" firstAttribute="top" secondItem="2NC-n3-Pmu" secondAttribute="bottom" constant="8" id="tkO-J6-uMq"/>
                             <constraint firstItem="RvD-zm-2IG" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="uO4-ZL-qmP"/>
                             <constraint firstItem="XHJ-te-LsG" firstAttribute="top" secondItem="ye2-cp-5GC" secondAttribute="top" id="yoi-sm-Yvb"/>
                             <constraint firstItem="VYR-Oc-0ng" firstAttribute="trailing" secondItem="2NC-n3-Pmu" secondAttribute="trailing" constant="20" id="yzi-93-fDN"/>

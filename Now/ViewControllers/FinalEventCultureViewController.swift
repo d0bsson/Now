@@ -63,11 +63,11 @@ class FinalEventCultureViewController: UIViewController {
                         self.descriptionPlaceLabel.text = decoderString
 
 // MARK: - Get address event
-//                        guard let place = randomPlace.place else { return }
-//                        self.addressPlaceLabel.text = place.address
+                        guard let place = randomPlace.place else { return }
 
             DispatchQueue.main.async {
                 self.placeImage.image = UIImage(data: imageData)
+                self.addressPlaceLabel.text = place.address
                 self.placeActivityIndicator.stopAnimating()
             }
         }
