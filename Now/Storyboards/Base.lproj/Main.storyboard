@@ -155,7 +155,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cultureCell" id="jk5-vs-JKo" customClass="CultureCell" customModule="Now" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cultureCell" id="jk5-vs-JKo" customClass="PlaceCell" customModule="Now" customModuleProvider="target">
                                 <rect key="frame" x="47" y="0.0" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uiM-js-Kwj">
@@ -253,10 +253,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gt7-5G-NIu">
-                                <rect key="frame" x="20" y="525" width="25" height="22"/>
+                                <rect key="frame" x="20" y="525" width="27" height="22"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="EzW-tx-idW"/>
+                                    <constraint firstAttribute="width" constant="27" id="EzW-tx-idW"/>
                                     <constraint firstAttribute="height" constant="22" id="kdZ-zr-gno"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -297,10 +297,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXW-nE-l6R">
-                                <rect key="frame" x="20" y="493" width="25" height="22"/>
+                                <rect key="frame" x="20" y="493" width="27" height="22"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="B3U-Mh-cky"/>
+                                    <constraint firstAttribute="width" constant="27" id="B3U-Mh-cky"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="iJE-1a-jhQ"/>
                                     <constraint firstAttribute="height" constant="22" id="uMW-BT-Gbn"/>
                                 </constraints>
@@ -315,7 +315,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m17-z5-bmJ">
-                                <rect key="frame" x="53" y="525" width="341" height="22"/>
+                                <rect key="frame" x="55" y="525" width="339" height="22"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="tub-q8-dS2"/>
@@ -330,10 +330,10 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raq-VO-hlH">
-                                <rect key="frame" x="20" y="461" width="25" height="22"/>
+                                <rect key="frame" x="20" y="461" width="27" height="22"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="IhE-xc-Uuy"/>
+                                    <constraint firstAttribute="width" constant="27" id="IhE-xc-Uuy"/>
                                     <constraint firstAttribute="height" constant="22" id="PoQ-qM-hMe"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -347,7 +347,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh1-4E-NNe">
-                                <rect key="frame" x="53" y="461" width="341" height="24"/>
+                                <rect key="frame" x="55" y="461" width="339" height="24"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -362,7 +362,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NC-n3-Pmu">
-                                <rect key="frame" x="53" y="493" width="341" height="24"/>
+                                <rect key="frame" x="55" y="493" width="339" height="24"/>
                                 <color key="backgroundColor" red="0.80392158030000005" green="0.73725497719999999" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -480,7 +480,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="barCell" reuseIdentifier="barCell" id="bt4-oE-ijO" customClass="BarCell" customModule="Now" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="barCell" reuseIdentifier="barCell" id="bt4-oE-ijO" customClass="EventCell" customModule="Now" customModuleProvider="target">
                                 <rect key="frame" x="47" y="0.0" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SAl-Y0-kh9">

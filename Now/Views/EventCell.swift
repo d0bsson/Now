@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BarCell: UICollectionViewCell {
+class EventCell: UICollectionViewCell {
     @IBOutlet weak var barCellLabel: UILabel!
     
     

@@ -29,7 +29,7 @@ class EventCategoriesViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "barCell", for: indexPath) as! BarCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "barCell", for: indexPath) as! EventCell
         
         cell.barCellLabel.text = bars[indexPath.item].name
         cell.barCellLabel.font = .boldSystemFont(ofSize: 18)

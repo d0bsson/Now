@@ -29,7 +29,7 @@ class PlaceCategoriesViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cultureCell", for: indexPath) as! CultureCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cultureCell", for: indexPath) as! PlaceCell
         
         cell.cultureCellLabel.text = cultures[indexPath.item].name
         cell.cultureCellLabel.font = .boldSystemFont(ofSize: 18)

@@ -24,8 +24,8 @@
 		D744A69527BD84A300A934D6 /* RandomEventCultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A69427BD84A300A934D6 /* RandomEventCultureViewController.swift */; };
 		D744A69927C1417C00A934D6 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A69827C1417C00A934D6 /* Bar.swift */; };
 		D744A69B27C1505800A934D6 /* Culture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A69A27C1505800A934D6 /* Culture.swift */; };
-		D744A69D27C1510D00A934D6 /* BarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A69C27C1510D00A934D6 /* BarCell.swift */; };
-		D744A69F27C1511A00A934D6 /* CultureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A69E27C1511A00A934D6 /* CultureCell.swift */; };
+		D744A69D27C1510D00A934D6 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A69C27C1510D00A934D6 /* EventCell.swift */; };
+		D744A69F27C1511A00A934D6 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744A69E27C1511A00A934D6 /* PlaceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,8 +48,8 @@
 		D744A69427BD84A300A934D6 /* RandomEventCultureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomEventCultureViewController.swift; sourceTree = "<group>"; };
 		D744A69827C1417C00A934D6 /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 		D744A69A27C1505800A934D6 /* Culture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Culture.swift; sourceTree = "<group>"; };
-		D744A69C27C1510D00A934D6 /* BarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCell.swift; sourceTree = "<group>"; };
-		D744A69E27C1511A00A934D6 /* CultureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureCell.swift; sourceTree = "<group>"; };
+		D744A69C27C1510D00A934D6 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		D744A69E27C1511A00A934D6 /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +89,7 @@
 				D744A68627B6E64300A934D6 /* Storyboards */,
 				D744A68727B6E65E00A934D6 /* Supports */,
 				D744A66C27B4512300A934D6 /* Assets.xcassets */,
+				D744A67127B4512300A934D6 /* Info.plist */,
 			);
 			path = Now;
 			sourceTree = "<group>";
@@ -117,7 +118,6 @@
 		D744A68727B6E65E00A934D6 /* Supports */ = {
 			isa = PBXGroup;
 			children = (
-				D744A67127B4512300A934D6 /* Info.plist */,
 				D744A66327B4512100A934D6 /* AppDelegate.swift */,
 				D744A66527B4512100A934D6 /* SceneDelegate.swift */,
 				D711050127EE1B9400308E77 /* Constants.swift */,
@@ -148,8 +148,8 @@
 		D744A6A027C1511F00A934D6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D744A69C27C1510D00A934D6 /* BarCell.swift */,
-				D744A69E27C1511A00A934D6 /* CultureCell.swift */,
+				D744A69C27C1510D00A934D6 /* EventCell.swift */,
+				D744A69E27C1511A00A934D6 /* PlaceCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,7 +227,7 @@
 			files = (
 				D744A68B27B9457100A934D6 /* NetworkManager.swift in Sources */,
 				D711050227EE1B9400308E77 /* Constants.swift in Sources */,
-				D744A69D27C1510D00A934D6 /* BarCell.swift in Sources */,
+				D744A69D27C1510D00A934D6 /* EventCell.swift in Sources */,
 				D744A69927C1417C00A934D6 /* Bar.swift in Sources */,
 				D744A66827B4512100A934D6 /* EventAndPlaceViewController.swift in Sources */,
 				D744A67E27B6E40900A934D6 /* EventCategoriesViewController.swift in Sources */,
@@ -239,7 +239,7 @@
 				D744A68027B6E58100A934D6 /* PlaceCategoriesViewController.swift in Sources */,
 				D744A69B27C1505800A934D6 /* Culture.swift in Sources */,
 				D744A66627B4512100A934D6 /* SceneDelegate.swift in Sources */,
-				D744A69F27C1511A00A934D6 /* CultureCell.swift in Sources */,
+				D744A69F27C1511A00A934D6 /* PlaceCell.swift in Sources */,
 				D73E72F927F8EC0E00520559 /* Extantions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

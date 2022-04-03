@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CultureCell: UICollectionViewCell {
+class PlaceCell: UICollectionViewCell {
     @IBOutlet weak var cultureCellLabel: UILabel!
     
 }
