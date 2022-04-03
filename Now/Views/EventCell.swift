@@ -10,7 +10,6 @@ import UIKit
 class EventCell: UICollectionViewCell {
     @IBOutlet weak var barCellLabel: UILabel!
     
-    
 }
 
 
