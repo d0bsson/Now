@@ -84,4 +84,8 @@ class RandomEventCultureViewController: UIViewController {
         let source = SFSafariViewController(url: url)
         present(source, animated: true)
     }
+    @IBAction func sharePlaceButtonPressed() {
+        Constans.shareButton(view: self, url: randomPlace?.foreignURL)
+        
+    }
 }

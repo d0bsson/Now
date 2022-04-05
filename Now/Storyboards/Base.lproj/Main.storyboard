@@ -199,6 +199,34 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMf-wN-gt9">
+                                <rect key="frame" x="347" y="743" width="47" height="40"/>
+                                <color key="backgroundColor" red="0.8222948699" green="0.62190054409999995" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="esj-gA-86L"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="arrowshape.turn.up.right.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="heavy"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="refreshPlacePressed" destination="0eR-hV-BvM" eventType="touchUpInside" id="aB4-DU-j0n"/>
+                                    <action selector="sharePlaceButtonPressed" destination="0eR-hV-BvM" eventType="touchUpInside" id="pMr-uP-a9D"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2G-XP-Xb4">
                                 <rect key="frame" x="20" y="799" width="374" height="43"/>
                                 <color key="backgroundColor" red="0.82352948189999997" green="0.62352943419999995" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -406,9 +434,11 @@
                             <constraint firstItem="Gt7-5G-NIu" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="Yja-K0-N3L"/>
                             <constraint firstItem="Gt7-5G-NIu" firstAttribute="top" secondItem="2NC-n3-Pmu" secondAttribute="bottom" constant="8" symbolic="YES" id="ZLd-zs-vdp"/>
                             <constraint firstItem="ROb-Db-Tnl" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="aKd-af-zz8"/>
+                            <constraint firstItem="VYR-Oc-0ng" firstAttribute="trailing" secondItem="oMf-wN-gt9" secondAttribute="trailing" constant="20" id="dA6-Nw-g21"/>
                             <constraint firstItem="raq-VO-hlH" firstAttribute="top" secondItem="udS-lo-5Nl" secondAttribute="bottom" constant="8" id="dc6-pc-ejo"/>
                             <constraint firstAttribute="bottomMargin" secondItem="RvD-zm-2IG" secondAttribute="bottom" constant="441" id="esK-7U-4XK"/>
                             <constraint firstItem="m17-z5-bmJ" firstAttribute="trailing" secondItem="2NC-n3-Pmu" secondAttribute="trailing" id="gOH-Tk-wOY"/>
+                            <constraint firstItem="j2G-XP-Xb4" firstAttribute="top" secondItem="oMf-wN-gt9" secondAttribute="bottom" constant="16" id="mqQ-et-Z9d"/>
                             <constraint firstAttribute="bottom" secondItem="XHJ-te-LsG" secondAttribute="bottom" id="nT7-ZE-TwT"/>
                             <constraint firstItem="byH-Fs-ONC" firstAttribute="centerX" secondItem="RvD-zm-2IG" secondAttribute="centerX" id="pSr-di-Xxs"/>
                             <constraint firstItem="j2G-XP-Xb4" firstAttribute="leading" secondItem="VYR-Oc-0ng" secondAttribute="leading" constant="20" id="quu-cB-AJk"/>
@@ -583,6 +613,34 @@
                                     <action selector="sourceButtonPressed" destination="6H6-NT-BtO" eventType="touchUpInside" id="Beo-Jd-iah"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBV-BC-Gin">
+                                <rect key="frame" x="347" y="743" width="47" height="40"/>
+                                <color key="backgroundColor" red="0.69019609689999994" green="0.69019609689999994" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="iHi-0c-XVp"/>
+                                </constraints>
+                                <color key="tintColor" red="0.62709122470000001" green="0.62709122470000001" blue="0.62709122470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="arrowshape.turn.up.right.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="heavy"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shareEventButtonPressed:" destination="6H6-NT-BtO" eventType="touchUpInside" id="4Kc-Fg-uu8"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c54-gb-8vO">
                                 <rect key="frame" x="20" y="437" width="22" height="22"/>
                                 <color key="backgroundColor" red="0.8078432083" green="0.8078432083" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -654,7 +712,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="refreshButtonPressed" destination="6H6-NT-BtO" eventType="touchUpInside" id="ZwJ-v4-yJB"/>
+                                    <action selector="refreshButtonPressed:" destination="6H6-NT-BtO" eventType="touchUpInside" id="NRj-dx-1Z8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ищем..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9y-JO-c1T">
@@ -756,6 +814,7 @@
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="HGV-vM-TG1" secondAttribute="trailing" constant="20" id="8rJ-FF-PIw"/>
                             <constraint firstItem="1Ei-x4-BDi" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="DQR-R0-Jsu"/>
                             <constraint firstItem="c54-gb-8vO" firstAttribute="top" secondItem="HGV-vM-TG1" secondAttribute="bottom" constant="37" id="Ekf-5K-YNA"/>
+                            <constraint firstItem="xF6-x1-mFN" firstAttribute="top" secondItem="rBV-BC-Gin" secondAttribute="bottom" constant="16" id="Mx3-z1-BWy"/>
                             <constraint firstItem="T87-NX-bfL" firstAttribute="trailing" secondItem="Mqu-5h-HXf" secondAttribute="trailing" id="O7O-zX-23F"/>
                             <constraint firstItem="bor-Wl-1t1" firstAttribute="centerX" secondItem="MOG-kK-70K" secondAttribute="centerX" id="P1A-Dq-E4q"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="bottom" secondItem="xF6-x1-mFN" secondAttribute="bottom" constant="20" id="QZ5-xD-41j"/>
@@ -773,6 +832,7 @@
                             <constraint firstAttribute="bottom" secondItem="T87-NX-bfL" secondAttribute="bottom" id="mYm-Mz-dc0"/>
                             <constraint firstItem="MOG-kK-70K" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="nQE-Yj-8LS"/>
                             <constraint firstItem="kMO-4m-zRt" firstAttribute="leading" secondItem="Mqu-5h-HXf" secondAttribute="leading" constant="20" id="p8f-em-pJh"/>
+                            <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="rBV-BC-Gin" secondAttribute="trailing" constant="20" id="qo9-hd-n7X"/>
                             <constraint firstItem="1Ei-x4-BDi" firstAttribute="top" secondItem="kMO-4m-zRt" secondAttribute="bottom" constant="8" id="rts-xW-nVA"/>
                             <constraint firstItem="1Ta-YG-ckn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2My-da-mZV" secondAttribute="bottom" constant="8" id="rvL-3A-Res"/>
                             <constraint firstItem="Mqu-5h-HXf" firstAttribute="trailing" secondItem="A9y-JO-c1T" secondAttribute="trailing" constant="20" id="t90-6d-Eel"/>
@@ -819,6 +879,7 @@
     </scenes>
     <resources>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
+        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="location.square" catalog="system" width="128" height="114"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>

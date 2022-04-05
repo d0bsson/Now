@@ -53,8 +53,9 @@ class RandomEventBarViewController: UIViewController {
                         
 // MARK: - Get date of event
             guard let date = randomEvent.dates else { return }
-            guard let endDate = date.first else { return }
-            guard let startDate = endDate.start else { return }
+            guard let startedDate = date.first else { return }
+            guard let startDate = startedDate.start else { return }
+            
             formatter.dateFormat = "E, d MMM в HH:mm"
             formatter.timeZone = .current
             formatter.locale = .current
@@ -83,8 +84,10 @@ class RandomEventBarViewController: UIViewController {
             }
         }
     }
-    @IBAction func refreshButtonPressed() {
+    
+    @IBAction func refreshButtonPressed(_ sender: UIButton) {
         fetchData(time: time, item: item)
+        sender.pulsate()
     }
     
     @IBAction func sourceButtonPressed() {
@@ -92,6 +95,13 @@ class RandomEventBarViewController: UIViewController {
         let source = SFSafariViewController(url: url)
         present(source, animated: true)
     }
+    
+    
+    @IBAction func shareEventButtonPressed(_ sender: UIButton) {
+        Constans.shareButton(view: self, url: randomEvent?.siteURL)
+        sender.pulsate()
+    }
+    
     
     private func getPriceEvent(randomEvent: BarResult) {
         if randomEvent.price != "" {

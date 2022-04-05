@@ -35,4 +35,11 @@ struct Constans {
             label.minimumScaleFactor = 0.0001
         }
     }
+    
+    static func shareButton(view: UIViewController, url: String?) {
+        let activityVC = UIActivityViewController(activityItems: [url ?? ""], applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = view.view
+        
+        view.present(activityVC, animated: true, completion: nil)
+    }
 }

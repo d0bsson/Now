@@ -7,6 +7,25 @@
 
 import UIKit
 
+extension UIButton {
+    
+//MARK: - Animation button
+        func pulsate() {
+            let pulse = CASpringAnimation(keyPath: "tranform.scale")
+            pulse.duration = 0.5
+            pulse.fromValue = 0.9
+            pulse.toValue = 1
+            pulse.autoreverses = true
+            pulse.initialVelocity = 0.5
+            pulse.damping = 1
+            
+            layer.add(pulse, forKey: nil)
+            print("123")
+            print("\n")
+            print("123")
+        }
+}
+
 // MARK: - Data
 extension Data {
     func parseData(removeString string: String) -> Data? {
@@ -116,9 +135,11 @@ extension UIView {
     }
 }
 
+
 // MARK: - UIButton 
 @IBDesignable
 class GradientButton: UIButton {
+    
     let gradientLayer = CAGradientLayer()
     
     @IBInspectable
