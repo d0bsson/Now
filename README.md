@@ -9,6 +9,7 @@
 <img src="https://img-host.ru/TIs7p.png"> <img src="https://img-host.ru/THVvV.png"> <img src="https://img-host.ru/83OZt.png">
 ----
 TO DO:
+- ~~Кнопка "Поделиться"~~
 - Добавление новых городов
 - Функция добавления в избранное
 
