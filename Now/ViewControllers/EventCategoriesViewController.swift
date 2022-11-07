@@ -19,7 +19,7 @@ class EventCategoriesViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
-        
+        print(bars)
         collectionViewBar.backgroundColor = .clear
         view.addVerticalGradientLayer(topColor:Constans.backgroundTop, bottomColor: Constans.backgroundBot)
     }
@@ -45,6 +45,8 @@ class EventCategoriesViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = bars[indexPath.item].slug ?? "unowed"
+        
+        
         
         switch item {
         case "business-events": tranferItem(time: time, item: item)
@@ -86,7 +88,6 @@ class EventCategoriesViewController: UICollectionViewController {
             self.collectionView.reloadData()
         }
     }
-    
 }
 
 

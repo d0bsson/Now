@@ -32,6 +32,8 @@ class RandomEventCultureViewController: UIViewController {
                                           descriptionPlaceLabel,
                                           addressPlaceLabel])
         fetchData(time: time, item: item)
+        print(item)
+        print("111")
         
         placeActivityIndicator.startAnimating()
         placeActivityIndicator.hidesWhenStopped = true

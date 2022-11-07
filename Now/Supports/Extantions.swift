@@ -20,9 +20,6 @@ extension UIButton {
             pulse.damping = 1
             
             layer.add(pulse, forKey: nil)
-            print("123")
-            print("\n")
-            print("123")
         }
 }
 

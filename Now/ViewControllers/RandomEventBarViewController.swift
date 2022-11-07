@@ -25,7 +25,7 @@ class RandomEventBarViewController: UIViewController {
     let formatter = DateFormatter()
     var time = ""
     var item = ""
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Constans.getGradient(with: self.view, to: backgroundView)
@@ -33,44 +33,53 @@ class RandomEventBarViewController: UIViewController {
                                           descriptionEventLabel,
                                           addressLabel])
         fetchData(time: time, item: item)
-
+        
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
     }
     
     func fetchData(time: String, item: String) {
         let url = "https://kudago.com/public-api/v1.4/events/?lang=ru&fields=dates,title,slug,place,description,price,images,site_url&categories=\(item)&expand=images,place&location=msk&actual_since=\(time)"
-
+        
         Network.shared.fetchEventData(from: url) { [self] result in
             guard let randomEvent = result.results?.randomElement() else { return }
             self.randomEvent = randomEvent
             print(randomEvent)
             
-// MARK: - Get random image from Event
-           
-            guard let urlImage = randomEvent.images?.randomElement()?.image else { return }
-            guard let imageData = ImageManager.shared.fetchImage(from: urlImage) else { return }
-                        
-// MARK: - Get date of event
-            guard let date = randomEvent.dates else { return }
-            guard let startedDate = date.first else { return }
-            guard let startDate = startedDate.start else { return }
+            // MARK: - Get random image from Event
             
-            formatter.dateFormat = "E, d MMM в HH:mm"
+            guard let urlImage = randomEvent.images?.randomElement()?.image,
+                  let imageData = ImageManager.shared.fetchImage(from: urlImage) else { return }
+            
+            // MARK: - Get date of event
+            guard let startedDate = randomEvent.dates?.last?.start,
+                  let endedDate = randomEvent.dates?.last?.end else { return }
+            let start = formatter.string(from: startedDate)
+            let end = formatter.string(from: endedDate)
+            
+            if start == "" {
+                self.dateLabel.text = "Дата: Постоянно"
+            } else if end == "" {
+                self.dateLabel.text = "Дата: С \(start)"
+            } else {
+                self.dateLabel.text = "Дата: C \(start) по \(end)"
+            }
+            
+            formatter.dateFormat = "E, d MMM"
             formatter.timeZone = .current
             formatter.locale = .current
-
-// MARK: - Get name event
+            
+            // MARK: - Get name event
             guard let nameEvent = randomEvent.title else { return }
-
-// MARK: - Get description event
+            
+            // MARK: - Get description event
             guard let descriptionEvent = randomEvent.description else { return }
             let decoderString = String(htmlEncodedString: descriptionEvent)
-
-// MARK: - Get address event
+            
+            // MARK: - Get address event
             guard let place = randomEvent.place else { return }
-
-// MARK: - Get price event
+            
+            // MARK: - Get price event
             getPriceEvent(randomEvent: randomEvent)
             
             DispatchQueue.main.async {
@@ -79,7 +88,7 @@ class RandomEventBarViewController: UIViewController {
                 self.addressLabel.text = place.address
                 self.descriptionEventLabel.text = decoderString
                 self.nameEventLabel.text = nameEvent
-                self.dateLabel.text = formatter.string(from: startDate)
+                //                self.dateLabel.text = formatter.string(from: startDate)
                 self.navigationItem.title = nameEvent
             }
         }
@@ -101,7 +110,6 @@ class RandomEventBarViewController: UIViewController {
         Constans.shareButton(view: self, url: randomEvent?.siteURL)
         sender.pulsate()
     }
-    
     
     private func getPriceEvent(randomEvent: BarResult) {
         if randomEvent.price != "" {
