@@ -46,8 +46,6 @@ class EventCategoriesViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = bars[indexPath.item].slug ?? "unowed"
         
-        
-        
         switch item {
         case "business-events": tranferItem(time: time, item: item)
         case "cinema":          tranferItem(time: time, item: item)

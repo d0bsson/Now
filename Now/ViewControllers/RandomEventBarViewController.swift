@@ -88,7 +88,6 @@ class RandomEventBarViewController: UIViewController {
                 self.addressLabel.text = place.address
                 self.descriptionEventLabel.text = decoderString
                 self.nameEventLabel.text = nameEvent
-                //                self.dateLabel.text = formatter.string(from: startDate)
                 self.navigationItem.title = nameEvent
             }
         }
