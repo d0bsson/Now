@@ -19,9 +19,9 @@ class EventCategoriesViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
-        print(bars)
         collectionViewBar.backgroundColor = .clear
-        view.addVerticalGradientLayer(topColor:Constans.backgroundTop, bottomColor: Constans.backgroundBot)
+        view.addVerticalGradientLayer(topColor:Constans.backgroundTop,
+                                      bottomColor: Constans.backgroundBot)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -30,7 +30,6 @@ class EventCategoriesViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "barCell", for: indexPath) as! EventCell
-        
         cell.barCellLabel.text = bars[indexPath.item].name
         cell.barCellLabel.font = .boldSystemFont(ofSize: 18)
         
